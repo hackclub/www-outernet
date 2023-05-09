@@ -1,0 +1,26 @@
+.header {
+    padding-top: 7rem;
+    color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    h1 {
+        font-family: "John Muir Wide";
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: "John Muir";
+        font-size: 2.25rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1.75rem;
+        max-width: 50vw;
+    }
+}

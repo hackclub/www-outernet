@@ -1,0 +1,41 @@
+.headerBorder {
+    margin-top: -14rem;
+    position: relative;
+
+    img {
+        display: block;
+        width: calc(100vw + 1px);
+        margin-bottom: -1px;
+    }
+}
+
+.about {
+    background-color: var(--navy);
+    color: var(--gold);
+    padding: 2rem 0 0 4rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+
+    > div {
+        flex: 50%;
+    }
+
+    img {
+        border: 15px solid var(--khaki);
+        width: 100%;
+    }
+
+    h1 {
+        font-family: "John Muir";
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    p {
+        color: var(--lightgold);
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+}

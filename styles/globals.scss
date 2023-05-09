@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Fixel";
+    src: url("../public/fonts/FixelVariable.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "John Muir";
+    src: url("../public/fonts/JohnMuirSans.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "John Muir Wide";
+    src: url("../public/fonts/JohnMuirSansWide.woff2") format("woff2");
+}
+
+:root {
+    --khaki: #dedaca;
+    --olive: #7f7c52;
+    --orange: #bd5b34;
+    --lightgold: #ecc07a;
+    --gold: #ce983a;
+    --navy: #07151b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: var(--khaki);
+    font-family: "Fixel", sans-serif;
+    overflow-x: clip;
+    margin: 0;
+    padding: 0;
+}
