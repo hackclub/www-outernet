@@ -1,0 +1,15 @@
+.wrapper {
+  padding: 2rem 4rem;
+  background-color: #ede0d2;
+  h1 {
+    font-family: "John Muir";
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  p {
+    color: var(--orange);
+    font-size: 1.5rem;
+    // line-height: 1.6;
+  }
+}
