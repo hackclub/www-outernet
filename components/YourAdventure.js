@@ -2,9 +2,15 @@ import styles from "./YourAdventure.module.scss";
 import { useEffect, useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-function insertAndShift(arr, from, to) {
-  let cutOut = arr.splice(from, 1)[0]; // cut the element at index 'from'
-  arr.splice(to, 0, cutOut); // insert it at index 'to'
+function insertAndShift(fromArr, toArr, from, to, sameArray) {
+  let cutOut = fromArr.splice(from, 1)[0]; // cut the element at index 'from'
+
+  if (sameArray) {
+    toArr = [...fromArr];
+  }
+
+  toArr.splice(to, 0, cutOut); // insert it at index 'to'
+  return { fromArr, toArr };
 }
 
 const eventList = [
@@ -47,7 +53,9 @@ const eventList = [
 
 export const YourAdventure = () => {
   const [events, setEvents] = useState(eventList);
-  const [newEvents, setNewEvents] = useState([]);
+  const [newEvents, setNewEvents] = useState([
+    { title: "sdfsdf", type: "sdfsd", id: "1232" },
+  ]);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -57,11 +65,44 @@ export const YourAdventure = () => {
   const reorderItems = (result) => {
     if (!result.destination) return;
 
-    let eventsCopy = [...events];
+    // please forgive me, for I have sinned -- Shubham Patil
 
-    insertAndShift(eventsCopy, result.source.index, result.destination.index);
+    const arrKey = {
+      timetable: [events, setEvents],
+      timetable2: [newEvents, setNewEvents],
+    };
 
-    setEvents(eventsCopy);
+    let fromArr = [...arrKey[result.source.droppableId][0]];
+    let toArr = [...arrKey[result.destination.droppableId][0]];
+
+    let sameArray =
+      result.source.droppableId === result.destination.droppableId;
+
+    const output = insertAndShift(
+      fromArr,
+      toArr,
+      result.source.index,
+      result.destination.index,
+      sameArray
+    );
+
+    if (result.destination.droppableId === "timetable2") {
+      setNewEvents(output.toArr);
+    } else if (result.destination.droppableId === "timetable") {
+      setEvents(output.toArr);
+    }
+
+    if (!sameArray) {
+      if (result.source.droppableId === "timetable2") {
+        setNewEvents(output.fromArr);
+      } else if (result.source.droppableId === "timetable") {
+        setEvents(output.fromArr);
+      }
+    }
+
+    // if (result.source.droppableId !== result.destination.droppableId) {
+    //   arrKey[result.source.droppableId][1]([...fromArr]);
+    // }
   };
 
   return (
@@ -98,9 +139,15 @@ export const YourAdventure = () => {
                                   ref={providedDroppable.innerRef}
                                   {...providedDroppable.draggableProps}
                                   {...providedDroppable.dragHandleProps}
+                                  className={styles.event}
                                 >
-                                  {event.title}
-                                  {event.id}
+                                  <p className={styles.eventtype}>
+                                    {event.type}
+                                  </p>
+                                  <h4>
+                                    {event.title}
+                                    {event.id}
+                                  </h4>
                                 </div>
                               );
                             }}
@@ -116,11 +163,26 @@ export const YourAdventure = () => {
 
           <Droppable droppableId="timetable2">
             {(provided) => (
-              <>
-                <ul {...provided.droppableProps} ref={provided.innerRef}>
+              <div style={{ display: "flex", width: "100%" }}>
+                <div>
+                  {[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22].map(
+                    (num, i) => {
+                      return <p>{num > 12 ? `${num - 12}pm` : `${num}am`}</p>;
+                    }
+                  )}
+                </div>
+                <div
+                  {...provided.droppableProps}
+                  ref={provided.innerRef}
+                  style={{
+                    // height: "100%",
+                    width: "100%",
+                    border: "1px solid black",
+                  }}
+                >
                   {newEvents && loaded
                     ? newEvents.map((event, i) => {
-                        return (
+                        return event ? (
                           <Draggable
                             key={event.id}
                             draggableId={event.id}
@@ -132,19 +194,24 @@ export const YourAdventure = () => {
                                   ref={providedDroppable.innerRef}
                                   {...providedDroppable.draggableProps}
                                   {...providedDroppable.dragHandleProps}
+                                  className={styles.event}
                                 >
-                                  {event.title}
-                                  {event.id}
+                                  <p className={styles.eventtype}>
+                                    {event.type}
+                                  </p>
+                                  <h4>{event.title}</h4>
                                 </div>
                               );
                             }}
                           </Draggable>
+                        ) : (
+                          ""
                         );
                       })
                     : ""}
-                </ul>
+                </div>
                 {provided.placeholder}
-              </>
+              </div>
             )}
           </Droppable>
         </DragDropContext>
