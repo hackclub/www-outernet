@@ -121,99 +121,116 @@ export const YourAdventure = () => {
 
       <div>
         <DragDropContext onDragEnd={reorderItems}>
-          <Droppable droppableId="timetable">
-            {(provided) => (
-              <>
-                <ul {...provided.droppableProps} ref={provided.innerRef}>
-                  {events && loaded
-                    ? events.map((event, i) => {
-                        return (
-                          <Draggable
-                            key={event.id}
-                            draggableId={event.id}
-                            index={i}
-                          >
-                            {(providedDroppable) => {
-                              return (
-                                <div
-                                  ref={providedDroppable.innerRef}
-                                  {...providedDroppable.draggableProps}
-                                  {...providedDroppable.dragHandleProps}
-                                  className={styles.event}
-                                >
-                                  <p className={styles.eventtype}>
-                                    {event.type}
-                                  </p>
-                                  <h4>
-                                    {event.title}
-                                    {event.id}
-                                  </h4>
-                                </div>
-                              );
-                            }}
-                          </Draggable>
-                        );
-                      })
-                    : ""}
-                </ul>
-                {provided.placeholder}
-              </>
-            )}
-          </Droppable>
-
-          <Droppable droppableId="timetable2">
-            {(provided) => (
-              <div style={{ display: "flex", width: "100%" }}>
-                <div>
-                  {[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22].map(
-                    (num, i) => {
+          <div
+            style={{ display: "flex", width: "100%", justifyContent: "center" }}
+          >
+            <Droppable droppableId="timetable">
+              {(provided) => (
+                <>
+                  <div
+                    style={{ maxWidth: "500px", marginRight: "3vw" }}
+                    {...provided.droppableProps}
+                    ref={provided.innerRef}
+                  >
+                    {events && loaded
+                      ? events.map((event, i) => {
+                          return (
+                            <Draggable
+                              key={event.id}
+                              draggableId={event.id}
+                              index={i}
+                            >
+                              {(providedDroppable) => {
+                                return (
+                                  <div
+                                    ref={providedDroppable.innerRef}
+                                    {...providedDroppable.draggableProps}
+                                    {...providedDroppable.dragHandleProps}
+                                    className={styles.event}
+                                  >
+                                    <p className={styles.eventtype}>
+                                      {event.type}
+                                    </p>
+                                    <h4>{event.title}</h4>
+                                  </div>
+                                );
+                              }}
+                            </Draggable>
+                          );
+                        })
+                      : ""}
+                  </div>
+                  {/* {provided.placeholder} */}
+                </>
+              )}
+            </Droppable>
+            <Droppable droppableId="timetable2">
+              {(provided) => (
+                <div style={{ display: "flex", width: "100%" }}>
+                  <div style={{ marginRight: "10px" }}>
+                    {[
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                    ].map((num, i) => {
                       return <p>{num > 12 ? `${num - 12}pm` : `${num}am`}</p>;
-                    }
-                  )}
+                    })}
+                  </div>
+                  <div
+                    {...provided.droppableProps}
+                    ref={provided.innerRef}
+                    style={{
+                      // height: "100%",
+                      width: "100%",
+                      border: "1px solid black",
+                    }}
+                  >
+                    {newEvents && loaded
+                      ? newEvents.map((event, i) => {
+                          return event ? (
+                            <Draggable
+                              key={event.id}
+                              draggableId={event.id}
+                              index={i}
+                            >
+                              {(providedDroppable) => {
+                                return (
+                                  <div
+                                    ref={providedDroppable.innerRef}
+                                    {...providedDroppable.draggableProps}
+                                    {...providedDroppable.dragHandleProps}
+                                    className={styles.event}
+                                  >
+                                    <p className={styles.eventtype}>
+                                      {event.type}
+                                    </p>
+                                    <h4>{event.title}</h4>
+                                  </div>
+                                );
+                              }}
+                            </Draggable>
+                          ) : (
+                            ""
+                          );
+                        })
+                      : ""}
+                  </div>
+                  {/* <div style={{ width: "100%" }}>{provided.placeholder}</div> */}
                 </div>
-                <div
-                  {...provided.droppableProps}
-                  ref={provided.innerRef}
-                  style={{
-                    // height: "100%",
-                    width: "100%",
-                    border: "1px solid black",
-                  }}
-                >
-                  {newEvents && loaded
-                    ? newEvents.map((event, i) => {
-                        return event ? (
-                          <Draggable
-                            key={event.id}
-                            draggableId={event.id}
-                            index={i}
-                          >
-                            {(providedDroppable) => {
-                              return (
-                                <div
-                                  ref={providedDroppable.innerRef}
-                                  {...providedDroppable.draggableProps}
-                                  {...providedDroppable.dragHandleProps}
-                                  className={styles.event}
-                                >
-                                  <p className={styles.eventtype}>
-                                    {event.type}
-                                  </p>
-                                  <h4>{event.title}</h4>
-                                </div>
-                              );
-                            }}
-                          </Draggable>
-                        ) : (
-                          ""
-                        );
-                      })
-                    : ""}
-                </div>
-                {provided.placeholder}
-              </div>
-            )}
-          </Droppable>
+              )}
+            </Droppable>
+          </div>
         </DragDropContext>
       </div>
     </div>
