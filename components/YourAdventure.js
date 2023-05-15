@@ -184,7 +184,7 @@ export const YourAdventure = () => {
                       21,
                       22,
                     ].map((num, i) => {
-                      return <p>{num > 12 ? `${num - 12}pm` : `${num}am`}</p>;
+                      return <p key={`hour-${num}`}>{num > 12 ? `${num - 12}pm` : `${num}am`}</p>;
                     })}
                   </div>
                   <div

@@ -1,16 +1,39 @@
 .wrapper {
   border-bottom: 2px solid var(--olive);
   padding-bottom: 14px;
-
-  > div {
-    padding: 2rem 4rem;
-    background-color: var(--olive);
-  }
-
+  background-color: var(--olive);
+  padding: 2rem 4rem;
+  
   h1 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
     color: var(--khaki);
     font-family: "John Muir";
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.8rem;
+  }
+}
+
+.grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 24px;
+  p {
+    color: #F9E1B7;
+    font-size: 18px;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+  }
+  a {
+    color: #F9E1B7;
+  }
+  img {
+    border: 10px solid white;
+    width: 100%;
+    height: 100%;
   }
 }
