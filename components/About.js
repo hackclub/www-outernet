@@ -6,7 +6,12 @@ const spotlightDiameter = 150;
 export default function About() {
   return (
     <div className={styles.headerBorder}>
-      <img src="/header-border.svg" />
+      <img
+        src="/header-border.svg"
+        className={styles.noSelect}
+        style={{ marginTop: "0px" }}
+        draggable="false"
+      />
       <div className={styles.about}>
         <div className={styles.container}>
           <div>
@@ -51,25 +56,13 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div style={{ zIndex: 2, position: 'relative', marginTop: '-1px'}}>
+      <div style={{ zIndex: 2, position: "relative", marginTop: "-1px" }}>
         <img
           className={styles.noSelect}
           style={{ marginTop: "0px" }}
           src="/about-stuff.svg"
           draggable="false"
         />
-        {/* <img
-          className={styles.noSelect}
-          style={{ marginTop: "-17rem" }}
-          src="/about-red.svg"
-          draggable="false"
-        />
-        <img
-          className={styles.noSelect}
-          style={{ marginTop: "-17rem" }}
-          src="/about-green.svg"
-          draggable="false"
-        /> */}
       </div>
     </div>
   );
