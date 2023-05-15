@@ -15,38 +15,38 @@ function insertAndShift(fromArr, toArr, from, to, sameArray) {
 
 const eventList = [
   {
-    title: "Build an 8-bit computer from scratch",
+    title: "Build an 8-Bit Computer from Scratch",
     type: "workshop",
     id: "1",
   },
   {
-    title: "Build an 8-bit computer from scratch",
-    type: "workshop",
+    title: "Ultimate Frisbee",
+    type: "outdoor activity",
     id: "2",
   },
   {
-    title: "Build an 8-bit computer from scratch",
-    type: "workshop",
+    title: "Restoring & Repairing an Original iMac",
+    type: "exploration session",
     id: "3",
   },
   {
-    title: "Build an 8-bit computer from scratch",
-    type: "workshop",
+    title: "Guitar Jam Session",
+    type: "activity",
     id: "4",
   },
   {
-    title: "Build an 8-bit computer from scratch",
+    title: "Building Our Own Transport Card System",
     type: "workshop",
     id: "5",
   },
   {
-    title: "Build an 8-bit computer from scratch",
-    type: "workshop",
+    title: "BBQ by the Beach",
+    type: "meal",
     id: "6",
   },
   {
-    title: "Build an 8-bit computer from scratch",
-    type: "workshop",
+    title: "Hike up Mt. Sarah",
+    type: "outdoor activity",
     id: "7",
   },
 ];
@@ -54,7 +54,7 @@ const eventList = [
 export const YourAdventure = () => {
   const [events, setEvents] = useState(eventList);
   const [newEvents, setNewEvents] = useState([
-    { title: "sdfsdf", type: "sdfsd", id: "1232" },
+    { title: "Pancakes Breakfast", type: "Meal", id: "0" },
   ]);
   const [loaded, setLoaded] = useState(false);
 
@@ -109,14 +109,8 @@ export const YourAdventure = () => {
     <div className={styles.wrapper}>
       <h1>you decide your own adventure...</h1>
       <p>
-        We’ll sleep in tents, build XYZ, barbecue by campfires, // 2-3 sentences
-        concretely describing the event.
-      </p>
-
-      <p>
-        There'll be endless creative spaces, never-ending entertainment, and all
-        sorts of activities — let's create a world of our dreams under the
-        stars.
+        We’ll sleep in tents, code deep into the night, barbecue by the beach, toast marshmallows around a campfire
+        — most importantly, however, you'll be given the time, space, and freedom to go on an adventure of your choosing. 
       </p>
 
       <div>
