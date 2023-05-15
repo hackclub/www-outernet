@@ -107,22 +107,23 @@ export const YourAdventure = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>you decide your own adventure...</h1>
+      <h1><span style={{background: '#07151b', padding: '9px 6px 2px 6px', borderRadius: '10px', color: '#dedaca'}}>you</span> decide your own adventure...</h1>
       <p>
-        We’ll sleep in tents, code deep into the night, barbecue by the beach, toast marshmallows around a campfire
-        — most importantly, however, you'll be given the time, space, and freedom to go on an adventure of your choosing. 
+        We’ll sleep in tents, code deep into the night, barbecue by the beach,
+        toast marshmallows around a campfire — most importantly, however, you'll
+        be given the time, space, and freedom to go on an adventure of your
+        choosing.
       </p>
-
       <div>
         <DragDropContext onDragEnd={reorderItems}>
           <div
-            style={{ display: "flex", width: "100%", justifyContent: "center" }}
+            style={{ display: "flex", width: "100%", justifyContent: "center", minHeight: "750px" }}
           >
             <Droppable droppableId="timetable">
               {(provided) => (
                 <>
                   <div
-                    style={{ maxWidth: "500px", marginRight: "3vw" }}
+                    style={{ maxWidth: "400px", marginRight: "3vw" }}
                     {...provided.droppableProps}
                     ref={provided.innerRef}
                   >
@@ -161,25 +162,37 @@ export const YourAdventure = () => {
             <Droppable droppableId="timetable2">
               {(provided) => (
                 <div style={{ display: "flex", width: "100%" }}>
-                  <div style={{ marginRight: "10px" }}>
+                  <div
+                    style={{
+                      marginRight: "10px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      flexDirection: "column",
+                    }}
+                  >
                     {[
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20,
-                      21,
-                      22,
+                      9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
                     ].map((num, i) => {
-                      return <p key={`hour-${num}`}>{num > 12 ? `${num - 12}pm` : `${num}am`}</p>;
+                      return (
+                        <p
+                          key={`hour-${num}`}
+                          style={{
+                            marginTop: "0",
+                            fontStyle: "italic",
+                            fontSize: "1em",
+                          }}
+                        >
+                          {num > 12
+                            ? `${num - 12}pm`
+                            : num == 12
+                            ? `12pm`
+                            : `${num}am`}
+                        </p>
+                      );
                     })}
+                    {/* <p style={{paddingBottom: '150%'}}>9am</p>
+                    <p style={{paddingBottom: '150%'}}>2pm</p>
+                    <p style={{paddingBottom: '150%'}}>7pm</p> */}
                   </div>
                   <div
                     {...provided.droppableProps}
@@ -188,6 +201,7 @@ export const YourAdventure = () => {
                       // height: "100%",
                       width: "100%",
                       border: "1px solid black",
+                      background: "transparent",
                     }}
                   >
                     {newEvents && loaded

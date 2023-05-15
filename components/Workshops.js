@@ -27,7 +27,6 @@ export default function Workshops() {
                     </a>
                 </p>
             </div>
-            <div />
         </div>
     );
 }

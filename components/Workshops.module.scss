@@ -1,9 +1,10 @@
 .wrapper {
     display: flex;
-    padding: 2rem 4rem;
+    padding: 4rem 10vw;
+    margin: auto;
 
     > div {
-        flex: 50%;
+        flex-basis: 60%;
     }
 
     h1 {

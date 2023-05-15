@@ -4,19 +4,26 @@
 
     img {
         display: block;
-        width: calc(100vw + 1px);
+        width: calc(100vw + 10px);
+        margin-left: -5px;
         margin-bottom: -1px;
     }
 }
 
 .about {
-    background-color: var(--navy);
     color: var(--gold);
-    padding: 2rem 0 0 4rem;
-    display: flex;
-    gap: 4rem;
-    align-items: center;
     position: relative;
+    background-color: var(--navy);
+    padding: 4em 0px;
+
+    .container {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+        padding-top: 4rem;
+    }
 
     > div {
         flex: 50%;
@@ -25,6 +32,8 @@
     img {
         border: 15px solid var(--khaki);
         width: 100%;
+        max-width: 1300px;
+        z-index: 4;
     }
 
     h1 {
@@ -35,7 +44,15 @@
 
     p {
         color: var(--lightgold);
-        font-size: 1.5rem;
+        font-size: 22px;
         line-height: 1.6;
     }
+}
+
+.noSelect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }

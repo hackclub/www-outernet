@@ -2,11 +2,9 @@
   border-bottom: 2px solid var(--olive);
   padding-bottom: 14px;
   background-color: var(--olive);
-  padding: 2rem 4rem;
+  padding: 4rem 10vw;
   
   h1 {
-    max-width: 1200px;
-    margin: auto;
     margin-top: 0.7em;
     margin-bottom: 0.7em;
     color: var(--khaki);
@@ -17,14 +15,13 @@
 }
 
 .grid {
-  max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 3fr;
   gap: 24px;
+  width: 100%;
   p {
     color: #F9E1B7;
-    font-size: 18px;
     margin-block-start: 0em;
     margin-block-end: 1em;
   }
