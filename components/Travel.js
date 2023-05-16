@@ -15,9 +15,9 @@ export default function Travel() {
         <div>
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
-            05841). Shuttles will be provided from nearby train stations
-            (Essex-Junction & Burlington Union Station) and airports (JFK, BTV &
-            BOS); the venue is also accessible via car{" "}
+            05841). Shuttles will be provided from Boston-Logan International Airport, 
+            Manchester-Boston Regional Airport, Burlington International Airport, and Boston South Station; 
+            the venue is also accessible via car{" "}
             <a href="https://goo.gl/maps/3aapuzHCzKBMM5L77?coh=178573&entry=tt">
               (directions)
             </a>
