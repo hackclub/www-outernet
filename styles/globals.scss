@@ -35,5 +35,56 @@ html {
     padding: 0;
 }
 
+p {
+    font-size: 22px;
+}
 
-p {font-size: 22px;}
+/* Stars */
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.starmap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes twinkling {
+    /* (msw) Credit for this totally goes to https://codepen.io/WebSonick/pen/vjmgu */
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.dust {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent
+        url(https://cloud-hyyxw15ok-hack-club-bot.vercel.app/1dust4.png) repeat
+        top center;
+    animation: twinkling 400s linear infinite;
+}

@@ -1,7 +1,4 @@
-.headerBorder {
-    margin-top: -14rem;
-    position: relative;
-
+.border {
     img {
         display: block;
         width: calc(100vw + 10px);
@@ -14,15 +11,16 @@
     color: var(--gold);
     position: relative;
     background-color: var(--navy);
-    padding: 4em 0px;
+    position: relative;
 
     .container {
         display: flex;
         gap: 4rem;
         align-items: center;
-        width: 80vw;
         margin: auto;
         padding-top: 4rem;
+        max-width: 80vw;
+        z-index: 4;
     }
 
     > div {
@@ -31,6 +29,8 @@
 
     img {
         border: 15px solid var(--khaki);
+        position: relative;
+        display: block;
         width: 100%;
         max-width: 1300px;
         z-index: 4;

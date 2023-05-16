@@ -1,26 +1,93 @@
 .header {
-    padding-top: 7rem;
-    color: var(--navy);
+    background-color: skyblue;
+    background-image: url("../public/assets/mountains.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: clip;
+    overflow-y: clip;
+    perspective: 1;
+    height: 100%;
+    margin-bottom: -15px;
+}
+
+.content {
+    padding: 7rem;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
+    z-index: 1001;
 
     h1 {
         font-family: "John Muir Wide";
         font-size: 7rem;
         margin: 0;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
 
     h2 {
         font-family: "John Muir";
         font-size: 2.25rem;
         margin-bottom: 0;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
 
     p {
         font-size: 1.75rem;
         max-width: 50vw;
     }
+}
+
+.parallaxGround,
+.parallaxClouds {
+    position: absolute;
+    left: 0;
+    height: 100%;
+
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.parallaxGround {
+    transform: translateZ(-50px);
+    z-index: 999;
+
+    img {
+        width: 100vw;
+    }
+}
+
+.parallaxClouds {
+    transform: translateZ(-100px);
+    z-index: 1000;
+    img {
+        width: 100vw;
+    }
+}
+
+.border {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 997;
+    width: 100%;
+    margin-left: -5px;
+    width: calc(100vw + 10px);
 }
