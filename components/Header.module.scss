@@ -1,5 +1,17 @@
+@keyframes background {
+    0% {
+        background-color: skyblue;
+    }
+    50% {
+        background-color: var(--navy);
+    }
+    100% {
+        background-color: skyblue;
+    }
+}
+
 .header {
-    background-color: var(--navy);
+    // animation: background 60s infinite forwards ease-in-out;
     background-image: url("../public/assets/mountains.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -12,7 +24,7 @@
 }
 
 .content {
-    padding: 7rem;
+    padding: 8rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,9 +42,7 @@
             0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
             0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
             0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-        }
-    
-        
+    }
 
     h2 {
         font-family: "John Muir";
@@ -54,11 +64,12 @@
 
 .flag {
     position: fixed;
-    padding-left: 10em;
-
+    top: 0;
+    left: 10em;
+    width: 200px;
 }
 
-.parallaxGround{
+.parallaxGround {
     position: absolute;
     top: 0;
     left: 0;

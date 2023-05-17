@@ -4,77 +4,103 @@ import { Fragment, useEffect, useRef } from "react";
 import Matter from "matter-js";
 
 export default function Workshops() {
+    const balls = [
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        },
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        },
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        },
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        },
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        },
+        {
+            heading: "Workshops shack",
+            text: "workshops, etc."
+        }
+    ];
+    const ballsRef = useRef([]);
     const containerRef = useRef();
     const requestRef = useRef();
     const engineRef = useRef();
-
-    const addBox = (
-        x = 0,
-        y = 0,
-        heading = "Workshops Shack",
-        text = "workshops, etc."
-    ) => {
-        // Create element
-        let wrapper = document.createElement("div");
-        wrapper.classList.add("ball");
-        wrapper.classList.add("noSelect");
-        let container = document.createElement("div");
-        let h1 = document.createElement("h1");
-        h1.innerHTML = heading;
-        container.appendChild(h1);
-        let p = document.createElement("p");
-        p.innerHTML = text;
-        container.appendChild(p);
-        wrapper.appendChild(container);
-        containerRef.current.appendChild(wrapper);
-
-        const box = {
-            body: Matter.Bodies.circle(x, y, 8.9),
-            elem: wrapper,
-            render() {
-                const { x, y } = this.body.position;
-                this.elem.style.top = `${y - 250 / 2}px`;
-                this.elem.style.left = `${x - 250 / 2}px`;
-                this.elem.style.transform = `rotate(${this.body.angle}rad)`;
-            }
-        };
-
-        return box;
-    };
 
     useEffect(() => {
         engineRef.current = Matter.Engine.create();
         const engine = engineRef.current;
 
         let boxes = [];
-        let x = 0,
-            y = 0;
-        /*
-        for (let i = 0; i < 5; i++) {
-            let box = addBox();
-            boxes.push(box);
-            x += 8.9 * 2;
-            y += 8.9 * 2;
+        let x = 115,
+            y = 115;
+        for (let ball of ballsRef.current) {
+            boxes.push({
+                body: Matter.Bodies.circle(x, y, 230 / 2),
+                elem: ball,
+                render() {
+                    const { x, y } = this.body.position;
+                    this.elem.style.top = `${y - 230 / 2}px`;
+                    this.elem.style.left = `${x - 230 / 2}px`;
+                    this.elem.style.transform = `rotate(${this.body.angle}rad)`;
+                }
+            });
+            x += 230;
+            if (x >= containerRef.current.clientWidth) {
+                x = 230;
+                y += 230;
+            }
         }
-        */
 
-        const ground = Matter.Bodies.rectangle(
-            0, // x
-            0, // y
-            containerRef.clientWidth, // w
-            10, // h
-            { isStatic: true }
-        );
+        const { top, right, bottom, left } =
+            containerRef.current.getBoundingClientRect();
 
-        const mouseConstraint = Matter.MouseConstraint.create(engine, {
-            element: containerRef.current
-        });
-
-        Matter.Composite.add(engine.world, [ground, mouseConstraint]);
+        Matter.Composite.add(engine.world, [
+            ...boxes.map(box => box.body),
+            Matter.Bodies.rectangle(
+                0,
+                containerRef.current.clientHeight - 1,
+                containerRef.current.clientWidth * 2,
+                1,
+                { isStatic: true }
+            ),
+            Matter.Bodies.rectangle(
+                0,
+                0,
+                1,
+                containerRef.current.clientHeight * 2,
+                { isStatic: true }
+            ),
+            Matter.Bodies.rectangle(
+                containerRef.current.clientWidth - 1,
+                0,
+                1,
+                containerRef.current.clientHeight * 2,
+                { isStatic: true }
+            ),
+            Matter.Bodies.rectangle(
+                0,
+                0,
+                containerRef.current.clientWidth * 2,
+                1,
+                { isStatic: true }
+            ),
+            Matter.MouseConstraint.create(engine, {
+                element: containerRef.current
+            })
+        ]);
 
         (function rerender() {
             // Rerender every box
-            // for (let box of boxes) box.render();
+            for (let box of boxes) box.render();
             Matter.Engine.update(engine);
             requestRef.current = requestAnimationFrame(rerender);
         })();
@@ -87,7 +113,12 @@ export default function Workshops() {
 
     return (
         <div className={styles.wrapper}>
-            <div>
+            <div
+                style={{
+                    position: "relative",
+                    zIndex: 3,
+                    paddingBottom: "4rem"
+                }}>
                 <h1>it takes a village...</h1>
                 <p>We’ve found the place.</p>
                 <p>Now it’s time for you to create the space.</p>
@@ -110,7 +141,23 @@ export default function Workshops() {
                     </a>
                 </p>
             </div>
-            <div style={{ maxHeight: "100vh" }} ref={containerRef} />
+            <div
+                style={{
+                    maxHeight: "100%",
+                    position: "relative"
+                }}
+                ref={containerRef}>
+                {balls.map((ball, idx) => (
+                    <div
+                        className="ball"
+                        ref={el => (ballsRef.current[idx] = el)}>
+                        <div className="noSelect">
+                            <h1>{ball.heading}</h1>
+                            <p>{ball.text}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
