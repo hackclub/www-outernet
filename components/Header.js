@@ -1,10 +1,14 @@
 import Button from "@/components/Button";
 import styles from "./Header.module.scss";
+import Stars from "./Stars";
+import { useRef } from "react";
 
 export default function Header() {
+    const containerRef = useRef();
+
     return (
         <>
-            <header className={styles.header}>
+            <header className={styles.header} ref={containerRef}>
                 <div className={styles.parallaxGround}>
                     <img src="/assets/ground.png" />
                 </div>
@@ -19,9 +23,13 @@ export default function Header() {
                         emergence &middot; 28th to 31st July, 2023
                     </p>
                     <p>Otis Mountain, Upstate NY</p>
-                    <Button>Join us</Button>
+                    <Button backgroundColor="white" textColor="var(--orange)">
+                        Join us
+                    </Button>
                 </div>
-                <img src="/header-border.svg" className={styles.border} />
+                <div>
+                    <img src="/header-border.svg" className={styles.border} />
+                </div>
             </header>
         </>
     );

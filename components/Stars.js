@@ -1,17 +1,17 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./Stars.module.scss";
 
-export default function Stars() {
-    const containerRef = useRef(null);
-
+export default function Stars({ containerRef, layers = 4 }) {
     useEffect(() => {
         if (containerRef.current) {
             // Draw 'em stars!
             const getStarmapCanvas = index => {
-                let el = document.querySelector(`canvas#starmap-${index}`);
+                let el = containerRef.current.querySelector(
+                    `canvas.starmap-${index}`
+                );
                 if (!el) {
                     el = document.createElement("canvas");
-                    el.id = `starmap-${index}`;
+                    el.classList.add(`starmap-${index}`);
                     el.classList.add("starmap");
                     el.classList.add("parallax");
                     el.classList.add("fade-in");
@@ -42,12 +42,11 @@ export default function Stars() {
                 }
             };
 
-            createStarmap(0); // closer & larger
-            createStarmap(1); // further & smaller as we go down
-            createStarmap(2);
-            createStarmap(3);
+            for (let i = 0; i <= layers; i++) {
+                createStarmap(i);
+            }
         }
-    }, []);
+    }, [containerRef]);
 
-    return <div className={styles.container} ref={containerRef} />;
+    return <div className={styles.container} />;
 }

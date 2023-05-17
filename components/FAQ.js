@@ -52,7 +52,12 @@ export default function FAQ() {
                                 <li>Rain jacket / warm layers</li>
                                 <li>Swimming wear</li>
                                 <li>Towel</li>
-                                <li>Flashli</li>
+                                <li>Flashlight / Headlamp</li>
+                                <li>Laptop & charger</li>
+                                <li>Sleeping bag</li>
+                                <li>Camping pad</li>
+                                <li>Tent</li>
+                                <li>An open mind</li>
                             </ul>
                         </div>
                         <div className={styles.qa}>

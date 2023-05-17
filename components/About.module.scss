@@ -9,9 +9,7 @@
 
 .about {
     color: var(--gold);
-    position: relative;
     background-color: var(--navy);
-    position: relative;
 
     .container {
         display: flex;
@@ -47,12 +45,4 @@
         font-size: 22px;
         line-height: 1.6;
     }
-}
-
-.noSelect {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }
