@@ -5,6 +5,7 @@ import Travel from "@/components/Travel";
 import { YourAdventure } from "@/components/YourAdventure";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer/"
 
 export default function Index() {
     return (
@@ -30,17 +31,10 @@ export default function Index() {
                         width: "100%",
                         height: "14px",
                         backgroundColor: "var(--orange)",
-                        marginBottom: "1rem"
-                    }}
-                />
-                <div
-                    style={{
-                        width: "100%",
-                        height: "14px",
-                        backgroundColor: "var(--olive)"
                     }}
                 />
             </footer>
+            <Footer />
         </>
     );
 }

@@ -30,7 +30,9 @@
             0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
             0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
             0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-    }
+        }
+    
+        
 
     h2 {
         font-family: "John Muir";
@@ -50,8 +52,13 @@
     }
 }
 
-.parallaxGround,
-.parallaxClouds {
+.flag {
+    position: fixed;
+    padding-left: 10em;
+
+}
+
+.parallaxGround{
     position: absolute;
     top: 0;
     left: 0;
@@ -70,10 +77,6 @@
     transform: translateZ(-100px) scale(2);
 }
 
-.parallaxClouds {
-    transform: translateZ(-600px) scale(7);
-}
-
 .border {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -86,3 +89,17 @@
     margin-left: -5px;
     width: calc(100vw + 10px);
 }
+
+// @media (min-width: 576px) {
+//     .h1 {
+//         font-size: ;
+//     }
+//     .h2 {
+//         font-size: ;
+//     }
+//    .parallaxGround {
+//          ** Needs to shift up on x-axis -- use translate(x-axis, y-axis, z-axis)
+//    }
+// }
+
+// Repeat w/changes for 768px, 992px, and 1200px

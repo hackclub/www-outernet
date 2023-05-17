@@ -8,13 +8,15 @@ export default function Header() {
 
     return (
         <>
+
             <header className={styles.header} ref={containerRef}>
+                <div className={styles.flag}>
+                    <img src="/assets/flag.svg"/>
+                </div>
                 <div className={styles.parallaxGround}>
                     <img src="/assets/ground.png" />
                 </div>
-                <div className={styles.parallaxClouds}>
-                    <img src="/assets/clouds.png" />
-                </div>
+
                 <div className={styles.content}>
                     <h2>Hack Club presents...</h2>
                     <h1>Outernet</h1>
@@ -31,6 +33,8 @@ export default function Header() {
                     <img src="/header-border.svg" className={styles.border} />
                 </div>
             </header>
+            
         </>
+       
     );
 }
