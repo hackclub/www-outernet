@@ -20,7 +20,7 @@ export default function CTA() {
                 </Button>
             </div>
             <div>
-                <img src="/cta-bg.png" style={{width: '100vw', marginLeft: '-7rem', marginBottom: '-8rem'}} />
+                <img src="/cta-bg.svg" style={{width: '100vw', marginLeft: '-7rem', marginBottom: '-8rem'}} />
             </div>
             {/* <Stars containerRef={containerRef} layers={1} /> */}
         </section>

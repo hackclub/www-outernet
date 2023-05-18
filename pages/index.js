@@ -16,27 +16,27 @@ export default function Index() {
             <YourAdventure />
             <CTA />
             <FAQ />
-            <footer style={{ padding: "1rem 0" }}>
+            <footer style={{ padding: "6px 0" }}>
                 <div
                     style={{
                         width: "100%",
-                        height: "10px",
+                        height: "6px",
                         backgroundColor: "var(--lightgold)",
-                        marginBottom: "10px"
+                        marginBottom: "6px"
                     }}
                 />
                 <div
                     style={{
                         width: "100%",
-                        height: "10px",
+                        height: "6px",
                         backgroundColor: "var(--orange)",
-                        marginBottom: "10px"
+                        marginBottom: "6px"
                     }}
                 />
                 <div
                     style={{
                         width: "100%",
-                        height: "10px",
+                        height: "6px",
                         backgroundColor: "var(--olive)"
                     }}
                 />

@@ -36,7 +36,7 @@ export default function About() {
                             className={styles.polaroids}
                             style={{
                                 position: "relative",
-                                marginTop: "-130px"
+                                marginTop: "-200px"
                             }}>
                             <img
                                 style={{

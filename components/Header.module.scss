@@ -1,5 +1,17 @@
+@keyframes background {
+    0% {
+        background-color: skyblue;
+    }
+    50% {
+        background-color: var(--navy);
+    }
+    100% {
+        background-color: skyblue;
+    }
+}
+
 .header {
-    background-color: var(--navy);
+    // animation: background 60s infinite forwards ease-in-out;
     background-image: url("../public/assets/mountains.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -26,7 +38,7 @@
 }
 
 .content {
-    padding: 7rem;
+    padding: 8rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -65,8 +77,14 @@
     }
 }
 
-.parallaxGround,
-.parallaxClouds {
+.flag {
+    position: fixed;
+    top: 0;
+    left: 10em;
+    width: 200px;
+}
+
+.parallaxGround {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,15 +109,6 @@
     user-select: none;
 }
 
-.parallaxClouds {
-    transform: translateZ(-600px) scale(7);
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
 .border {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -112,3 +121,17 @@
     margin-left: -5px;
     width: calc(100vw + 10px);
 }
+
+// @media (min-width: 576px) {
+//     .h1 {
+//         font-size: ;
+//     }
+//     .h2 {
+//         font-size: ;
+//     }
+//    .parallaxGround {
+//          ** Needs to shift up on x-axis -- use translate(x-axis, y-axis, z-axis)
+//    }
+// }
+
+// Repeat w/changes for 768px, 992px, and 1200px
