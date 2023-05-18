@@ -44,7 +44,7 @@ export default function About() {
                                     transform: "rotate(-10deg)",
                                     zIndex: 0
                                 }}
-                                src="https://horizon.hackclub.com/images/5.jpg"
+                                src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/1238640104-c9057168-862e-46a4-9729-49a79115d2d2-min.jpeg"
                             />
                             <img
                                 style={{
@@ -52,7 +52,7 @@ export default function About() {
                                     position: "absolute",
                                     top: "50%"
                                 }}
-                                src="https://horizon.hackclub.com/images/slh.jpg"
+                                src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/0238642298-6c1fd9c7-49a4-4bc8-ab17-c841c6bd6f8b.jpeg"
                             />
                         </div>
                     </div>
