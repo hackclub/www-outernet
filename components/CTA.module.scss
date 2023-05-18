@@ -4,6 +4,12 @@
     padding: 7rem;
     text-align: center;
     position: relative;
+    background-image: url(/about-bg.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
     h1 {
         font-family: "John Muir";

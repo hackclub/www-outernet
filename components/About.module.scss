@@ -1,48 +1,61 @@
 .border {
-    img {
-        display: block;
-        width: calc(100vw + 10px);
-        margin-left: -5px;
-        margin-bottom: -1px;
-    }
+    background-image: url(/about-bg.png);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    display: block;
+    width: calc(100vw + 10px);
+    margin-left: -5px;
+    margin-bottom: -1px;
+  }
 }
 
 .about {
-    color: var(--gold);
-    background-color: var(--navy);
+  color: var(--gold);
+  background-image: url(/about-bg.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  z-index: 0;
 
-    .container {
-        display: flex;
-        gap: 4rem;
-        align-items: center;
-        margin: auto;
-        padding-top: 4rem;
-        max-width: 80vw;
-        z-index: 4;
-    }
+  .container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+    padding-top: 4rem;
+    max-width: 80vw;
+    z-index: 4;
+  }
 
-    > div {
-        flex: 50%;
-    }
+  > div {
+    flex: 50%;
+  }
 
-    img {
-        border: 15px solid var(--khaki);
-        position: relative;
-        display: block;
-        width: 100%;
-        max-width: 1300px;
-        z-index: 4;
-    }
+  img {
+    border: 15px solid var(--khaki);
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1300px;
+    z-index: 4;
+  }
 
-    h1 {
-        font-family: "John Muir";
-        text-transform: uppercase;
-        font-size: 3rem;
-    }
+  h1 {
+    font-family: "John Muir";
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
 
-    p {
-        color: var(--lightgold);
-        font-size: 22px;
-        line-height: 1.6;
-    }
+  p {
+    color: var(--lightgold);
+    font-size: 22px;
+    line-height: 1.6;
+  }
 }

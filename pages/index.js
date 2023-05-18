@@ -20,23 +20,23 @@ export default function Index() {
                 <div
                     style={{
                         width: "100%",
-                        height: "14px",
+                        height: "10px",
                         backgroundColor: "var(--lightgold)",
-                        marginBottom: "1rem"
+                        marginBottom: "10px"
                     }}
                 />
                 <div
                     style={{
                         width: "100%",
-                        height: "14px",
+                        height: "10px",
                         backgroundColor: "var(--orange)",
-                        marginBottom: "1rem"
+                        marginBottom: "10px"
                     }}
                 />
                 <div
                     style={{
                         width: "100%",
-                        height: "14px",
+                        height: "10px",
                         backgroundColor: "var(--olive)"
                     }}
                 />

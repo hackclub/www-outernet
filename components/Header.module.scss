@@ -9,6 +9,20 @@
     overflow-y: clip;
     margin-bottom: -15px;
     perspective: 100px;
+    z-index: 20;
+    min-height: 135vh;
+}
+
+.contentBg {
+    background-image: url(/about-bg.png);
+    height: 500px;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
 }
 
 .content {
@@ -19,7 +33,8 @@
     align-items: center;
     text-align: center;
     position: relative;
-    z-index: 1001;
+    z-index: 5;
+
 
     h1 {
         font-family: "John Muir Wide";
@@ -57,6 +72,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 4;
 
     img {
         display: block;
@@ -68,10 +84,20 @@
 
 .parallaxGround {
     transform: translateZ(-100px) scale(2);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .parallaxClouds {
     transform: translateZ(-600px) scale(7);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .border {

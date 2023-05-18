@@ -12,8 +12,10 @@ export default function Header() {
                 <div className={styles.parallaxGround}>
                     <img src="/assets/ground.png" />
                 </div>
-                <div className={styles.parallaxClouds}>
+                {/* <div className={styles.parallaxClouds}>
                     <img src="/assets/clouds.png" />
+                </div> */}
+                <div className={styles.contentBg}>
                 </div>
                 <div className={styles.content}>
                     <h2>Hack Club presents...</h2>
@@ -27,9 +29,9 @@ export default function Header() {
                         Join us
                     </Button>
                 </div>
-                <div>
+                {/* <div>
                     <img src="/header-border.svg" className={styles.border} />
-                </div>
+                </div> */}
             </header>
         </>
     );

@@ -58,7 +58,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <Stars containerRef={containerRef} />
+                {/* <Stars containerRef={containerRef} /> */}
             </div>
             <div
                 className={styles.border}
@@ -66,7 +66,7 @@ export default function About() {
                 <img
                     className={styles.border}
                     style={{ marginTop: "0px" }}
-                    src="/about-stuff.svg"
+                    src="/about-stuff-1.svg"
                     draggable="false"
                 />
             </div>

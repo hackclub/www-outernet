@@ -3,7 +3,6 @@ import styles from "./FAQ.module.scss";
 export default function FAQ() {
     return (
         <>
-            <img className={styles.border} src="/faq-border.svg" />
             <section className={styles.wrapper}>
                 <h1>You might be wondering...</h1>
                 <div className={styles.faq}>
