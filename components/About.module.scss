@@ -1,58 +1,75 @@
-.headerBorder {
-    margin-top: -14rem;
-    position: relative;
-
-    img {
-        display: block;
-        width: calc(100vw + 10px);
-        margin-left: -5px;
-        margin-bottom: -1px;
-    }
+.border {
+    background-image: url(/about-bg.png);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    display: block;
+    width: calc(100vw + 10px);
+    margin-left: -5px;
+    margin-bottom: -1px;
+  }
 }
 
 .about {
-    color: var(--gold);
+  color: var(--gold);
+  background-image: url(/about-bg.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  z-index: 0;
+
+  .container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+    padding-top: 4rem;
+    max-width: 80vw;
+    z-index: 4;
+  }
+
+  > div {
+    flex: 50%;
+  }
+
+  img {
+    border: 15px solid var(--khaki);
     position: relative;
-    background-color: var(--navy);
-    padding: 4em 0px;
+    display: block;
+    width: 90%;
+    max-width: 1300px;
+    z-index: 4;
+  }
 
-    .container {
-        display: flex;
-        gap: 4rem;
-        align-items: center;
-        width: 80vw;
-        margin: auto;
-        padding-top: 4rem;
-    }
+  h1 {
+    font-family: "John Muir";
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
 
-    > div {
-        flex: 50%;
-    }
-
-    img {
-        border: 15px solid var(--khaki);
-        width: 100%;
-        max-width: 1300px;
-        z-index: 4;
-    }
-
-    h1 {
-        font-family: "John Muir";
-        text-transform: uppercase;
-        font-size: 3rem;
-    }
-
-    p {
-        color: var(--lightgold);
-        font-size: 22px;
-        line-height: 1.6;
-    }
+  p {
+    color: var(--lightgold);
+    font-size: 22px;
+    line-height: 1.6;
+  }
 }
 
-.noSelect {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+.title {
+  div {
+    width: fit-content;
+    display: inline;
+  }
+}
+
+.paragraph {
+  font-size: 22px;
+  div {
+    margin-top: 24px;
+  }
 }

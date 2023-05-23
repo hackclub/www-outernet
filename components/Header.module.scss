@@ -1,26 +1,137 @@
+@keyframes background {
+    0% {
+        background-color: skyblue;
+    }
+    50% {
+        background-color: var(--navy);
+    }
+    100% {
+        background-color: skyblue;
+    }
+}
+
 .header {
-    padding-top: 7rem;
-    color: var(--navy);
+    // animation: background 60s infinite forwards ease-in-out;
+    background-image: url("../public/assets/mountains.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: clip;
+    overflow-y: clip;
+    margin-bottom: -15px;
+    perspective: 100px;
+    z-index: 20;
+    min-height: 135vh;
+}
+
+.contentBg {
+    background-image: url(/about-bg.png);
+    height: 500px;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.content {
+    padding: 8rem;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
+    z-index: 5;
+
 
     h1 {
         font-family: "John Muir Wide";
         font-size: 7rem;
         margin: 0;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
 
     h2 {
         font-family: "John Muir";
         font-size: 2.25rem;
         margin-bottom: 0;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
 
     p {
+        text-shadow: 0px 0px 9px black;
         font-size: 1.75rem;
         max-width: 50vw;
     }
 }
+
+.flag {
+    position: fixed;
+    top: 0;
+    left: 10em;
+    width: 200px;
+}
+
+.parallaxGround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+
+    img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.parallaxGround {
+    transform: translateZ(-100px) scale(2);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.border {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 997;
+    width: 100%;
+    margin-left: -5px;
+    width: calc(100vw + 10px);
+}
+
+// @media (min-width: 576px) {
+//     .h1 {
+//         font-size: ;
+//     }
+//     .h2 {
+//         font-size: ;
+//     }
+//    .parallaxGround {
+//          ** Needs to shift up on x-axis -- use translate(x-axis, y-axis, z-axis)
+//    }
+// }
+
+// Repeat w/changes for 768px, 992px, and 1200px

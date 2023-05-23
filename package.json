@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "@hackclub/meta": "^1.1.32",
+    "matter-js": "^0.19.0",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-beautiful-dnd": "^13.1.1",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-reveal": "^1.2.2",
+    "react-typing-effect": "^2.0.5",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "sass": "^1.62.1"

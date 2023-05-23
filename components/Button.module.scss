@@ -1,14 +1,11 @@
 .button {
     background-color: transparent;
-    border: 1px solid var(--navy);
     color: transparent;
     cursor: pointer;
     font-family: "John Muir Wide";
-    padding: 16px 5px;
+    padding: 16px 8px;
 
     > span {
-        background-color: var(--navy);
-        color: var(--khaki);
         padding: 12px 24px;
     }
 }

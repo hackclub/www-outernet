@@ -1,5 +1,6 @@
 .wrapper {
   padding: 4rem 10vw;
+  position: relative;
   h1 {
     font-family: "John Muir";
     text-transform: uppercase;
@@ -9,6 +10,17 @@
   p {
     color: var(--orange);
   }
+
+  &:after {
+    content: " ";
+    border-bottom: 8px solid var(--khaki);
+    display: block;
+    width: 100vw;
+    left: 0;
+    z-index: 4;
+    position: absolute;
+    bottom: -16px;
+}
 }
 
 .event:not(:last-child) {
