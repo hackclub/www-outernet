@@ -18,16 +18,16 @@ export default function Workshops() {
             text: "Find makerware to hack on"
         },
         {
-            heading: "TBD",
-            text: "What guild do you want to build?"
+            heading: "The cafe",
+            text: "We're serving matcha, coffee, and tea!"
         },
         {
-            heading: "Workshops shack",
-            text: "workshops, etc."
+            heading: "Immigration",
+            text: "The gateway to Outernet!"
         },
         {
-            heading: "Workshops shack",
-            text: "workshops, etc."
+            heading: "Outernet LAN",
+            text: "We're building a mesh intranet"
         }
     ];
     const ballsRef = useRef([]);
@@ -138,15 +138,15 @@ export default function Workshops() {
                 <p>We’ve found the place.</p>
                 <p>Now it’s time for you to create the space.</p>
                 <p>
-                    Outernet will be contrived of hacker-formed villages, taking
+                    Outernet will be contrived of hacker-formed guilds, taking
                     shape through the vision of the hackers involved.
                 </p>
                 <p>
-                    We’ve set aside $5,000 for villages to use as the community
-                    sees fit.
+                    We’ve set aside $5,000 for guilds to use as you
+                    see fit.
                 </p>
                 <p>
-                    Propose an idea, form your camp group and build something
+                    Propose an idea, form your guild and build something
                     for the Outernet community to enjoy at{" "}
                     <a
                         className={styles.link}
@@ -159,7 +159,11 @@ export default function Workshops() {
             <div
                 style={{
                     maxHeight: "100%",
-                    position: "relative"
+                    position: "relative",
+                    cursor: "default !important",
+                    'div': {
+                        cursor: "default!important",
+                    }
                 }}
                 id="ball"
                 ref={containerRef}>

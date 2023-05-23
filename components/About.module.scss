@@ -42,7 +42,7 @@
     border: 15px solid var(--khaki);
     position: relative;
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     z-index: 4;
   }
@@ -57,5 +57,19 @@
     color: var(--lightgold);
     font-size: 22px;
     line-height: 1.6;
+  }
+}
+
+.title {
+  div {
+    width: fit-content;
+    display: inline;
+  }
+}
+
+.paragraph {
+  font-size: 22px;
+  div {
+    margin-top: 24px;
   }
 }

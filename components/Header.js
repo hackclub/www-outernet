@@ -57,10 +57,9 @@ export default function Header() {
                     <h2>Hack Club presents...</h2>
                     <h1>Outernet</h1>
                     <p style={{ marginBottom: 0 }}>
-                        A technological odyssey into tinkering, nature, and
-                        emergence &middot; 28th to 31st July, 2023
+                        A hacker oasis in nature for high school hackers
                     </p>
-                    <p>Otis Mountain, Upstate NY</p>
+                    <p>Northeast Kingdom, VT, USA  &middot; 28th to 31st July, 2023</p>
                     <Button backgroundColor="white" textColor="var(--orange)" href="https://outernet-register.innovationcircuit.com/">
                         Join us
                     </Button>
