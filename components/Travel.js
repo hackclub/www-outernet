@@ -10,9 +10,8 @@ export default function Travel() {
           all you have to do is get here.
         </h1>
       </div>
-      <div className={styles.grid}>
-        <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
-        <div>
+      <div className={styles.main}>
+      <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
             05841). Shuttles will be provided from Boston-Logan International Airport, 
@@ -34,7 +33,7 @@ export default function Travel() {
             about long-distance travel and we'll email more information about
             stipends and discounted flights to you and your parents.
           </p>
-        </div>
+        
       </div>
     </div>
   );
