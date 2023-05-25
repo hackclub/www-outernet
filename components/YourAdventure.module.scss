@@ -68,3 +68,9 @@
     margin-bottom: 0px;
   }
 }
+
+@media (max-width: 400px) {
+  .timetableItem {
+    grid-template-columns: 1fr;
+  }
+}

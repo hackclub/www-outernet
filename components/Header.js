@@ -72,6 +72,7 @@ export default function Header() {
           <Fade delay={700}>
             <p>Northeast Kingdom, VT, USA &middot; 28th to 31st July, 2023</p>
           </Fade>
+          <br />
           <Fade delay={900}>
             <Button
               backgroundColor="white"

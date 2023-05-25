@@ -40,6 +40,7 @@ export default function About() {
                 </Fade>
                 </div>
             </div>
+            <Zoom delay={1000}>
               <div
                 className={styles.polaroids}
               >
@@ -60,6 +61,7 @@ export default function About() {
                   src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/0238642298-6c1fd9c7-49a4-4bc8-ab17-c841c6bd6f8b.jpeg"
                 />
               </div>
+              </Zoom>
           </div>
         </div>
 

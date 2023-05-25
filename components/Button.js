@@ -4,17 +4,18 @@ export default function Button({
   children,
   backgroundColor = "var(--navy)",
   textColor = "var(--khaki)",
-  fontSize = "1.75rem",
-  link = "https://outernet-register.innovationcircuit.com/",
+  link,
+  ...props
 }) {
   return (
     <a
       href={link}
       target="_blank"
       className={styles.button}
-      style={{ fontSize, border: `1px solid ${backgroundColor}`, width: 'fit-content', textAlign: 'center' }}
+      style={{ border: `1px solid ${backgroundColor}`, width: 'fit-content', textAlign: 'center' }}
+      {...props}
     >
-      <span style={{ backgroundColor, color: textColor }}>{children}</span>
+      <span style={{ backgroundColor, color: textColor, fontSize: 'inherit' }}>{children}</span>
     </a>
   );
 }
