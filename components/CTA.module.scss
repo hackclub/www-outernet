@@ -34,13 +34,14 @@
 
   input {
     width: 100%;
-    background: transparent;
+    background: rgb(255, 255, 255, 0.1);
     border: 1px var(--khaki) solid;
     line-height: 30px;
     color: var(--khaki);
     font-family: Fixel;
     padding: 4px 8px;
     font-size: inherit;
+    backdrop-filter: blur(2px);
   }
 }
 
@@ -56,10 +57,10 @@
   }
 
   .wrapper {
-    padding: 8rem 2rem;
+    padding: 8rem 10vw;
   }
 
   .border{
-    margin-left: -2rem;
+    margin-left: -10vw;
   }
 }

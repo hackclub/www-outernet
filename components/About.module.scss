@@ -72,6 +72,7 @@
 
 @media screen and (max-width: 900px) {
   .about {
+    padding: 10vw;
     .container {
       flex-direction: column;
       padding-bottom: 300px;
@@ -80,5 +81,11 @@
 
   .polaroids {
     margin-top: 0;
+    margin-left: 20px;
   }
+
+  .container {img {
+    border: 8px solid var(--khaki);
+  }
+}
 }

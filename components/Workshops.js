@@ -134,7 +134,8 @@ export default function Workshops() {
                 style={{
                     position: "relative",
                     zIndex: 3,
-                    paddingBottom: "4rem"
+                    paddingBottom: "4rem",
+                    maxWidth: "80vw"
                 }}>
                 <h1>it takes a village...</h1>
                 <p>We’ve found the place.</p>

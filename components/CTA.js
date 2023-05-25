@@ -20,28 +20,28 @@ export default function CTA() {
         <Fade delay={300}>
           <p style={{ marginBottom: 0 }}>
             No matter where our events take us, the key to the magic has always
-            been you. Join us and sign up.
+            been you. <br />Join us and sign up.
           </p>
         </Fade>
         <Fade delay={500}>
           <div className={styles.forms}>
             <div>
               <p>Name</p>
-            <input
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              value={name}
-              required
-            />
+              <input
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                value={name}
+                required
+              />
             </div>
             <div>
-            <p>Email</p>
-            <input
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              value={email}
-              required
-            />
+              <p>Email</p>
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                value={email}
+                required
+              />
             </div>
           </div>
         </Fade>
@@ -61,10 +61,7 @@ export default function CTA() {
         </Fade>
       </div>
       <div>
-        <img
-          src="/cta-bg.svg"
-          className={styles.border}
-        />
+        <img src="/cta-bg.svg" className={styles.border} />
       </div>
       {/* <Stars containerRef={containerRef} layers={1} /> */}
     </section>
