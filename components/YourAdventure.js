@@ -123,15 +123,16 @@ export const YourAdventure = () => {
       <div>
         <DragDropContext onDragEnd={reorderItems}>
           <div
-            style={{ display: "flex", width: "100%", justifyContent: "center", minHeight: "750px" }}
+            className={styles.timetable}
           >
             <Droppable droppableId="timetable">
               {(provided) => (
                 <>
                   <div
-                    style={{ maxWidth: "400px", marginRight: "3vw" }}
+                    style={{ scidth: "400px", marginRight: "3vw" }}
                     {...provided.droppableProps}
                     ref={provided.innerRef}
+                    className={styles.timetableItem}
                   >
                     {events && loaded
                       ? events.map((event, i) => {

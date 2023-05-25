@@ -12,7 +12,7 @@ export default function Button({
       href={link}
       target="_blank"
       className={styles.button}
-      style={{ fontSize, border: `1px solid ${backgroundColor}` }}
+      style={{ fontSize, border: `1px solid ${backgroundColor}`, width: 'fit-content', textAlign: 'center' }}
     >
       <span style={{ backgroundColor, color: textColor }}>{children}</span>
     </a>

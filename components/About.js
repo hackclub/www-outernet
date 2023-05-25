@@ -18,28 +18,30 @@ export default function About() {
               </h1>
               <div className={styles.paragraph}>
                 <Fade delay={200} >
+                  <p>
                   To all high school artists, writers, engineers, tinkerers,
                   campers, filmmakers, volunteers:
+                  </p>
                 </Fade>
                 <Fade delay={400}>
+                  <p>
                   This summer, we’re ditching boring classrooms for the great
                   outdoors to create a hacker oasis where you can be creative,
                   make things, help one another, and have fun.
+                  </p>
                 </Fade>
                 <Fade delay={600}>
+                  <p>
                   Together, let’s build a space where you can indulge in an
                   entirely new creative space. No preconceived notions. No
                   expectations. Just a space for you to create whatever you
                   want.
+                  </p>
                 </Fade>
                 </div>
             </div>
               <div
                 className={styles.polaroids}
-                style={{
-                  position: "relative",
-                  marginTop: "-20%",
-                }}
               >
                 <img
                   style={{

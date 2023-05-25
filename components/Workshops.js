@@ -147,6 +147,7 @@ export default function Workshops() {
                     We’ve set aside $5,000 for guilds to use as you
                     see fit.
                 </p>
+                <p><b>What guild will you run?</b></p>
                 <p>
                     Propose an idea, form your guild and build something
                     for the Outernet community to enjoy at{" "}
@@ -164,9 +165,7 @@ export default function Workshops() {
                     maxHeight: "100%",
                     position: "relative",
                     cursor: "default !important",
-                    'div': {
-                        cursor: "default!important",
-                    }
+                    minHeight: "400px"
                 }}
                 id="ball"
                 ref={containerRef}>

@@ -16,7 +16,6 @@
     color: var(--khaki);
     font-family: "John Muir";
     text-transform: uppercase;
-    font-size: 2.7rem;
   }
 
   &:after {
@@ -32,10 +31,10 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .main {
     img {
-      width: 400px!important;
+      width: 500px!important;
       object-fit: cover;
       float: right;
       margin-left: 32px;
@@ -47,7 +46,7 @@
 .main {
   margin: auto;
   width: 100%;
-  p {
+  p, ul {
     color: #F9E1B7;
     margin-block-start: 0em;
     margin-block-end: 1em;

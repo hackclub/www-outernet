@@ -11,12 +11,10 @@ export default function FAQ() {
                         <Fade delay={200}>
                         <div
                             className={styles.qa}
-                            style={{ minHeight: "400px" }}>
+                            >
                             <h2>What is this?</h2>
                             <p>
-                                Outernet is built by and for high schoolers.
-                                Graduating seniors and middle schoolers are also
-                                welcome to join us on Otis.
+                                Outernet is 4 day hacker camp in Vermont organized by Hack Club, a 501(c)3 nonprofit that supports a global community of 25k high school makers.
                             </p>
                         </div>
                         </Fade>
@@ -34,7 +32,7 @@ export default function FAQ() {
                         <div className={styles.qa}>
                             <h2>How much does this event cost?</h2>
                             <p>
-                                It’s completely free - food is included and
+                                It’s completely free — food and accomodations are included — and
                                 travel stipends are available.
                             </p>
                         </div>
@@ -80,6 +78,7 @@ export default function FAQ() {
                                 supervised by background checked staff and
                                 overseen by 24/7 security staff.
                             </p>
+                            <p>Find more resources (including information sessions) at our parents guide <a href="/">here</a>.</p>
                         </div>
                         </Fade>
                     </div>
