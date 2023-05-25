@@ -1,12 +1,14 @@
 import styles from "./FAQ.module.scss";
+import { Slide, Fade } from "react-reveal";
 
 export default function FAQ() {
     return (
         <>
             <section className={styles.wrapper}>
-                <h1>You might be wondering...</h1>
+                <h1><Slide>You might be wondering...</Slide></h1>
                 <div className={styles.faq}>
                     <div>
+                        <Fade delay={200}>
                         <div
                             className={styles.qa}
                             style={{ minHeight: "400px" }}>
@@ -17,6 +19,8 @@ export default function FAQ() {
                                 welcome to join us on Otis.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={400}>
                         <div className={styles.qa}>
                             <h2>Who can come?</h2>
                             <p>
@@ -25,6 +29,8 @@ export default function FAQ() {
                                 welcome to join us on Otis.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={600}>
                         <div className={styles.qa}>
                             <h2>How much does this event cost?</h2>
                             <p>
@@ -32,6 +38,8 @@ export default function FAQ() {
                                 travel stipends are available.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={800}>
                         <div className={styles.qa}>
                             <h2>What amenities will be available?</h2>
                             <p>
@@ -42,8 +50,10 @@ export default function FAQ() {
                                 site.
                             </p>
                         </div>
+                        </Fade>
                     </div>
                     <div>
+                        <Fade delay={1000}>
                         <div className={styles.qa}>
                             <h2>What should I bring?</h2>
                             <ul>
@@ -59,6 +69,8 @@ export default function FAQ() {
                                 <li>An open mind</li>
                             </ul>
                         </div>
+                        </Fade>
+                        <Fade delay={1200}>
                         <div className={styles.qa}>
                             <h2>My parents are worried!</h2>
                             <p>
@@ -69,6 +81,7 @@ export default function FAQ() {
                                 overseen by 24/7 security staff.
                             </p>
                         </div>
+                        </Fade>
                     </div>
                 </div>
             </section>

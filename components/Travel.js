@@ -1,39 +1,44 @@
 // Green area on travel
 import styles from "./Travel.module.scss";
+import { Fade } from "react-reveal";
 
 export default function Travel() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <h1>
-          Outernet is free and our gift to you; <br />
-          all you have to do is get here.
-        </h1>
+        <Fade>
+          <h1>
+            Outernet is free and our gift to you; <br />
+            all you have to do is get here.
+          </h1>
+        </Fade>
       </div>
       <div className={styles.main}>
-      <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
-          <p>
-            Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
-            05841). Shuttles will be provided from Boston-Logan International Airport, 
-            Manchester-Boston Regional Airport, Burlington International Airport, and Boston South Station; 
-            the venue is also accessible via car{" "}
-            <a href="https://goo.gl/maps/3aapuzHCzKBMM5L77?coh=178573&entry=tt">
-              (directions)
-            </a>
-            .
-          </p>
-          <p>
-            To ensure everyone has a chance to make it, our donors have funded a
-            set of travel stipends (up to $750 in reimbursement for flights and
-            train trips). We're also working with United Airlines and Alaska
-            Airlines to offer discounted flights.
-          </p>
-          <p>
-            Indicate on your registation form that you'd like to recieve details
-            about long-distance travel and we'll email more information about
-            stipends and discounted flights to you and your parents.
-          </p>
-        
+        <Fade cascade>
+        <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
+        <p>
+          Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
+          05841). Shuttles will be provided from Boston-Logan International
+          Airport, Manchester-Boston Regional Airport, Burlington International
+          Airport, and Boston South Station; the venue is also accessible via
+          car{" "}
+          <a href="https://goo.gl/maps/3aapuzHCzKBMM5L77?coh=178573&entry=tt">
+            (directions)
+          </a>
+          .
+        </p>
+        <p>
+          To ensure everyone has a chance to make it, our donors have funded a
+          set of travel stipends (up to $750 in reimbursement for flights and
+          train trips). We're also working with United Airlines and Alaska
+          Airlines to offer discounted flights.
+        </p>
+        <p>
+          Indicate on your registation form that you'd like to recieve details
+          about long-distance travel and we'll email more information about
+          stipends and discounted flights to you and your parents.
+        </p>
+        </Fade>
       </div>
     </div>
   );

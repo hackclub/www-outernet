@@ -1,6 +1,7 @@
 import styles from "./YourAdventure.module.scss";
 import { useEffect, useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { Zoom, Fade } from "react-reveal";
 
 function insertAndShift(fromArr, toArr, from, to, sameArray) {
   let cutOut = fromArr.splice(from, 1)[0]; // cut the element at index 'from'
@@ -107,13 +108,18 @@ export const YourAdventure = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Zoom>
       <h1><span style={{background: '#07151b', padding: '9px 6px 2px 6px', borderRadius: '10px', color: '#dedaca'}}>you</span> decide your own adventure...</h1>
+      </Zoom>
+      <Fade delay={300}>
       <p>
         We’ll sleep in tents, code deep into the night, barbecue by the beach,
         toast marshmallows around a campfire — most importantly, however, you'll
         be given the time, space, and freedom to go on an adventure of your
         choosing.
       </p>
+      </Fade>
+      <Fade delay={500}>
       <div>
         <DragDropContext onDragEnd={reorderItems}>
           <div
@@ -241,6 +247,7 @@ export const YourAdventure = () => {
           </div>
         </DragDropContext>
       </div>
+      </Fade>
     </div>
   );
 };

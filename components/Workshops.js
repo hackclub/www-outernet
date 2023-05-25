@@ -2,6 +2,7 @@
 import styles from "./Workshops.module.scss";
 import { Fragment, useEffect, useRef } from "react";
 import Matter from "matter-js";
+import { Fade, Zoom } from "react-reveal";
 
 export default function Workshops() {
     const balls = [
@@ -128,6 +129,7 @@ export default function Workshops() {
 
     return (
         <div className={styles.wrapper}>
+            <Zoom>
             <div
                 style={{
                     position: "relative",
@@ -156,6 +158,7 @@ export default function Workshops() {
                     </a>
                 </p>
             </div>
+            </Zoom>
             <div
                 style={{
                     maxHeight: "100%",
@@ -168,6 +171,7 @@ export default function Workshops() {
                 id="ball"
                 ref={containerRef}>
                 {balls.map((ball, idx) => (
+                    <Fade delay={1000 / (idx + 1)}>
                     <div
                         className="ball"
                         ref={el => (ballsRef.current[idx] = el)}>
@@ -176,6 +180,7 @@ export default function Workshops() {
                             <p>{ball.text}</p>
                         </div>
                     </div>
+                    </Fade>
                 ))}
             </div>
         </div>
