@@ -77,7 +77,7 @@ export default function Header() {
             <Button
               backgroundColor="white"
               textColor="var(--orange)"
-              href="https://outernet-register.innovationcircuit.com/"
+              href="https://register.outernet.hackclub.com/"
             >
               Join us
             </Button>

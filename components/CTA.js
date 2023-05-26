@@ -52,7 +52,7 @@ export default function CTA() {
             textColor="var(--navy)"
             onClick={() => {
               if (typeof window !== undefined) {
-                window.location.href = `https://outernet-register.innovationcircuit.com/?Name=${name}&Email=${email}`;
+                window.location.href = `https://register.outernet.hackclub.com/?Name=${name}&Email=${email}`;
               }
             }}
           >
