@@ -171,15 +171,27 @@ export const YourAdventure = () => {
                                       <>
                                         <input onChange={(e) => {
                                           let tempEvents = events
-                                          let newEvent = tempEvents.pop()
-                                          newEvent.type = e.target.value
-                                          setEvents([...tempEvents, newEvent])
+                                          tempEvents = tempEvents.map(mappedEvent => {
+                                            if(mappedEvent.id != event.id){
+                                              return mappedEvent
+                                            }
+                                            else {
+                                              return {...mappedEvent, type: e.target.value}
+                                            }
+                                          })
+                                          setEvents(tempEvents)
                                         }} className={styles.eventtype} value={event.type} placeholder="Type" style={{background: 'none', padding: 0, border: 'none'}}/>
                                         <input onChange={(e) => {
                                           let tempEvents = events
-                                          let newEvent = tempEvents.pop()
-                                          newEvent.title = e.target.value
-                                          setEvents([...tempEvents, newEvent])
+                                          tempEvents = tempEvents.map(mappedEvent => {
+                                            if(mappedEvent.id != event.id){
+                                              return mappedEvent
+                                            }
+                                            else {
+                                              return {...mappedEvent, title: e.target.value}
+                                            }
+                                          })
+                                          setEvents(tempEvents)
                                         }} className={styles.maininput} value={event.title} placeholder="Activity" style={{background: 'none', padding: 0, border: 'none'}}/>
                                       </>
                                       :
