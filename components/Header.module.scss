@@ -1,125 +1,123 @@
 @keyframes background {
-    0% {
-        background-color: skyblue;
-    }
-    50% {
-        background-color: var(--navy);
-    }
-    100% {
-        background-color: skyblue;
-    }
+  0% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: var(--navy);
+  }
+  100% {
+    background-color: skyblue;
+  }
 }
 
 .header {
-    // animation: background 60s infinite forwards ease-in-out;
-    background-image: url("../public/assets/mountains.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow-x: clip;
-    overflow-y: clip;
-    margin-bottom: -15px;
-    perspective: 100px;
-    z-index: 20;
-    min-height: 135vh;
+  // animation: background 60s infinite forwards ease-in-out;
+  background-image: url("../public/assets/mountains.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: clip;
+  // overflow-y: clip;
+  margin-bottom: -15px;
+  perspective: 100px;
+  z-index: 20;
 }
 
+// @media screen and (max-width: 400px) {
+//     .header {
+//         min-height: 60vh;
+//     }
+// }
+
 .contentBg {
-    background-image: url(/about-bg.png);
-    height: 500px;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
+  background-image: url(/about-bg.png);
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
 }
 
 .content {
-    padding: 8rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    z-index: 5;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 5;
 
+  h1 {
+    font-family: "John Muir Wide";
+    margin: 0;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
 
-    h1 {
-        font-family: "John Muir Wide";
-        font-size: 7rem;
-        margin: 0;
-        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
-            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-    }
+  h2 {
+    font-family: "John Muir";
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
 
-    h2 {
-        font-family: "John Muir";
-        font-size: 2.25rem;
-        margin-bottom: 0;
-        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
-            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    p {
-        text-shadow: 0px 0px 9px black;
-        font-size: 1.75rem;
-        max-width: 50vw;
-    }
+  p {
+    text-shadow: 0px 0px 9px black;
+    max-width: 90vw;
+  }
 }
 
 .flag {
-    position: fixed;
-    top: 0;
-    left: 10em;
-    width: 200px;
+  position: fixed;
+  top: 0;
+  left: 10vw;
 }
 
 .parallaxGround {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+
+  img {
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 4;
-
-    img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 .parallaxGround {
-    transform: translateZ(-100px) scale(2);
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  transform: translateZ(-100px) scale(2);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .border {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    position: relative;
-    z-index: 997;
-    width: 100%;
-    margin-left: -5px;
-    width: calc(100vw + 10px);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  position: relative;
+  z-index: 997;
+  width: 100%;
+  margin-left: -5px;
+  width: calc(100vw + 10px);
 }
 
 // @media (min-width: 576px) {
@@ -135,3 +133,228 @@
 // }
 
 // Repeat w/changes for 768px, 992px, and 1200px
+
+@media screen and (min-width: 1600px) {
+  .header {
+    min-height: 135vh;
+  }
+
+  .content {
+    padding: 8rem;
+
+    h1 {
+      font-size: 7rem;
+      line-height: 7.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .contentBg {
+    height: 450px;
+  }
+
+  .parallaxGround {
+    img {
+      top: 0;
+    }
+  }
+
+  .flag {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    min-height: 120vh;
+  }
+
+  .content {
+    padding: 8rem;
+
+    h1 {
+      font-size: 6rem;
+      line-height: 6.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    min-height: 110vh;
+  }
+
+  .content h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .contentBg {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contentBg {
+    height: 400px;
+  }
+
+  .parallaxGround {
+    img {
+      width: 120vw;
+      top: 0;
+    }
+  }
+
+  .header {
+    min-height: 110vh;
+    background-size: 120vw;
+  }
+
+  .content {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header {
+    min-height: 100vh;
+    background-size: 150vw;
+    background-position: 0px 150px;
+  }
+  .content {
+    padding: 8rem 4rem;
+  }
+
+  .contentBg {
+    height: 350px;
+  }
+
+  .parallaxGround {
+    bottom: 400px;
+    img {
+      bottom: 0;
+    }
+  }
+
+  .flag {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    min-height: 100vh;
+    background-size: 150vw;
+    background-position: -50px 200px;
+  }
+  .parallaxGround {
+    bottom: 450px;
+    img {
+      width: 140vw;
+    }
+  }
+
+  .contentBg {
+    height: 300px;
+  }
+
+  .content {
+    padding: 4rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: block;
+    min-height: 100vh;
+    background-size: 200vw;
+    background-position: -200px 200px;
+    padding-bottom: 600px;
+  }
+  .parallaxGround {
+    bottom: 500px;
+    img {
+      width: 200vw;
+    }
+  }
+
+  .content {
+    padding: 8rem 2rem;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .contentBg {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-size: 250vw;
+    background-position: -400px 250px;
+    padding-bottom: 200px;
+  }
+  .content {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .parallaxGround {
+    img {
+      width: 200vw;
+      left: -100px;
+    }
+  }
+  .contentBg {
+    height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+      background-size: 250vw;
+      background-position: -400px 250px;
+      padding-bottom: 200px;
+    }
+    .content {
+      h1 {
+        font-size: 2.2rem;
+      }
+  
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .parallaxGround {
+      img {
+        width: 200vw;
+        left: -100px;
+      }
+    }
+    .contentBg {
+      height: 150px;
+    }
+  }
+  

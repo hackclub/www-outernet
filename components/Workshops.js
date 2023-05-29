@@ -2,6 +2,7 @@
 import styles from "./Workshops.module.scss";
 import { Fragment, useEffect, useRef } from "react";
 import Matter from "matter-js";
+import { Fade, Zoom } from "react-reveal";
 
 export default function Workshops() {
     const balls = [
@@ -30,109 +31,111 @@ export default function Workshops() {
             text: "We're building a mesh intranet"
         }
     ];
-    const ballsRef = useRef([]);
-    const containerRef = useRef();
-    const requestRef = useRef();
-    const engineRef = useRef();
+    // const ballsRef = useRef([]);
+    // const containerRef = useRef();
+    // const requestRef = useRef();
+    // const engineRef = useRef();
 
-    useEffect(() => {
-        engineRef.current = Matter.Engine.create();
-        const engine = engineRef.current;
+    // useEffect(() => {
+    //     engineRef.current = Matter.Engine.create();
+    //     const engine = engineRef.current;
 
-        let boxes = [];
-        let x = 115,
-            y = 115;
-        for (let ball of ballsRef.current) {
-            boxes.push({
-                body: Matter.Bodies.circle(x, y, 230 / 2),
-                elem: ball,
-                render() {
-                    const { x, y } = this.body.position;
-                    this.elem.style.top = `${y - 230 / 2}px`;
-                    this.elem.style.left = `${x - 230 / 2}px`;
-                    this.elem.style.transform = `rotate(${this.body.angle}rad)`;
-                }
-            });
-            x += 230;
-            if (x >= containerRef.current.clientWidth) {
-                x = 230;
-                y += 230;
-            }
-        }
+    //     let boxes = [];
+    //     let x = 115,
+    //         y = 115;
+    //     for (let ball of ballsRef.current) {
+    //         boxes.push({
+    //             body: Matter.Bodies.circle(x, y, 230 / 2),
+    //             elem: ball,
+    //             render() {
+    //                 const { x, y } = this.body.position;
+    //                 this.elem.style.top = `${y - 230 / 2}px`;
+    //                 this.elem.style.left = `${x - 230 / 2}px`;
+    //                 this.elem.style.transform = `rotate(${this.body.angle}rad)`;
+    //             }
+    //         });
+    //         x += 230;
+    //         if (x >= containerRef.current.clientWidth) {
+    //             x = 230;
+    //             y += 230;
+    //         }
+    //     }
 
-        const { top, right, bottom, left } =
-            containerRef.current.getBoundingClientRect();
+    //     const { top, right, bottom, left } =
+    //         containerRef.current.getBoundingClientRect();
 
-        Matter.Composite.add(engine.world, [
-            ...boxes.map(box => box.body),
-            Matter.Bodies.rectangle(
-                0,
-                containerRef.current.clientHeight - 1,
-                containerRef.current.clientWidth * 2,
-                1,
-                { isStatic: true }
-            ),
-            Matter.Bodies.rectangle(
-                0,
-                0,
-                1,
-                containerRef.current.clientHeight * 2,
-                { isStatic: true }
-            ),
-            Matter.Bodies.rectangle(
-                containerRef.current.clientWidth - 1,
-                0,
-                1,
-                containerRef.current.clientHeight * 2,
-                { isStatic: true }
-            ),
-            Matter.Bodies.rectangle(
-                0,
-                0,
-                containerRef.current.clientWidth * 2,
-                1,
-                { isStatic: true }
-            ),
-            // Matter.MouseConstraint.create(engine, {
-            //     element: containerRef.current,
-            //     constraint: {
-            //         render: {
-            //           visible: true
-            //         },
-            //         stiffness: 0.8
-            //       }
-            // }),
-        ]);
+    //     Matter.Composite.add(engine.world, [
+    //         ...boxes.map(box => box.body),
+    //         Matter.Bodies.rectangle(
+    //             0,
+    //             containerRef.current.clientHeight - 1,
+    //             containerRef.current.clientWidth * 2,
+    //             1,
+    //             { isStatic: true }
+    //         ),
+    //         Matter.Bodies.rectangle(
+    //             0,
+    //             0,
+    //             1,
+    //             containerRef.current.clientHeight * 2,
+    //             { isStatic: true }
+    //         ),
+    //         Matter.Bodies.rectangle(
+    //             containerRef.current.clientWidth - 1,
+    //             0,
+    //             1,
+    //             containerRef.current.clientHeight * 2,
+    //             { isStatic: true }
+    //         ),
+    //         Matter.Bodies.rectangle(
+    //             0,
+    //             0,
+    //             containerRef.current.clientWidth * 2,
+    //             1,
+    //             { isStatic: true }
+    //         ),
+    //         // Matter.MouseConstraint.create(engine, {
+    //         //     element: containerRef.current,
+    //         //     constraint: {
+    //         //         render: {
+    //         //           visible: true
+    //         //         },
+    //         //         stiffness: 0.8
+    //         //       }
+    //         // }),
+    //     ]);
  
-        (function rerender() {
-            // Rerender every box
-            for (let box of boxes) box.render();
-            Matter.Engine.update(engine);
-            requestRef.current = requestAnimationFrame(rerender);
-        })();
+    //     (function rerender() {
+    //         // Rerender every box
+    //         for (let box of boxes) box.render();
+    //         Matter.Engine.update(engine);
+    //         requestRef.current = requestAnimationFrame(rerender);
+    //     })();
 
-        return () => {
-            cancelAnimationFrame(requestRef.current);
-            Matter.Engine.clear(engineRef.current);
-        };
-    }, []);
+    //     return () => {
+    //         cancelAnimationFrame(requestRef.current);
+    //         Matter.Engine.clear(engineRef.current);
+    //     };
+    // }, []);
 
 
-    useEffect(()=> {
-        if (typeof window != undefined) {
-            let ball = document.getElementById('ball')
-            ball.removeEventListener("mousewheel", function() {return false})
-            ball.removeEventListener("DOMMouseScroll", function() {return false})
-        }
-    }, [])
+    // useEffect(()=> {
+    //     if (typeof window != undefined) {
+    //         let ball = document.getElementById('ball')
+    //         ball.removeEventListener("mousewheel", function() {return false})
+    //         ball.removeEventListener("DOMMouseScroll", function() {return false})
+    //     }
+    // }, [])
 
     return (
         <div className={styles.wrapper}>
+            <Zoom>
             <div
                 style={{
                     position: "relative",
                     zIndex: 3,
-                    paddingBottom: "4rem"
+                    paddingBottom: "4rem",
+                    maxWidth: "80vw"
                 }}>
                 <h1>it takes a village...</h1>
                 <p>We’ve found the place.</p>
@@ -145,6 +148,7 @@ export default function Workshops() {
                     We’ve set aside $5,000 for guilds to use as you
                     see fit.
                 </p>
+                <p><b>What guild will you run?</b></p>
                 <p>
                     Propose an idea, form your guild and build something
                     for the Outernet community to enjoy at{" "}
@@ -156,18 +160,18 @@ export default function Workshops() {
                     </a>
                 </p>
             </div>
-            <div
+            </Zoom>
+            {/* <div
                 style={{
                     maxHeight: "100%",
                     position: "relative",
                     cursor: "default !important",
-                    'div': {
-                        cursor: "default!important",
-                    }
+                    minHeight: "400px"
                 }}
                 id="ball"
                 ref={containerRef}>
                 {balls.map((ball, idx) => (
+                    <Fade delay={1000 / (idx + 1)}>
                     <div
                         className="ball"
                         ref={el => (ballsRef.current[idx] = el)}>
@@ -176,8 +180,9 @@ export default function Workshops() {
                             <p>{ball.text}</p>
                         </div>
                     </div>
+                    </Fade>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

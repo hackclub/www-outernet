@@ -18,29 +18,31 @@ export default function About() {
               </h1>
               <div className={styles.paragraph}>
                 <Fade delay={200} >
+                  <p>
                   To all high school artists, writers, engineers, tinkerers,
                   campers, filmmakers, volunteers:
+                  </p>
                 </Fade>
                 <Fade delay={400}>
+                  <p>
                   This summer, we’re ditching boring classrooms for the great
                   outdoors to create a hacker oasis where you can be creative,
                   make things, help one another, and have fun.
+                  </p>
                 </Fade>
                 <Fade delay={600}>
+                  <p>
                   Together, let’s build a space where you can indulge in an
                   entirely new creative space. No preconceived notions. No
                   expectations. Just a space for you to create whatever you
                   want.
+                  </p>
                 </Fade>
                 </div>
             </div>
-            <Fade delay={900}>
+            <Zoom delay={1000}>
               <div
                 className={styles.polaroids}
-                style={{
-                  position: "relative",
-                  marginTop: "-20%",
-                }}
               >
                 <img
                   style={{
@@ -59,7 +61,7 @@ export default function About() {
                   src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/0238642298-6c1fd9c7-49a4-4bc8-ab17-c841c6bd6f8b.jpeg"
                 />
               </div>
-            </Fade>
+              </Zoom>
           </div>
         </div>
 

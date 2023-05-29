@@ -1,11 +1,6 @@
 .wrapper {
   padding: 4rem 10vw;
   position: relative;
-  h1 {
-    font-family: "John Muir";
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
 
   p {
     color: var(--orange);
@@ -33,7 +28,6 @@
   width: 100%;
   h4 {
     color: var(--khaki);
-    font-size: 1.5em;
     margin: 0;
   }
   
@@ -52,4 +46,40 @@
   margin: 0;
   width: 100%;
   font-weight: 600;
+}  
+
+.timetable {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 750px;
+}
+
+@media (max-width: 900px) {
+  .timetable {
+    flex-direction: column;
+  }
+
+  .timetableItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    gap: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .eventtype {
+    font-size: small !important;
+  }
+
+  .event:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .timetableItem {
+    grid-template-columns: 1fr;
+  }
 }

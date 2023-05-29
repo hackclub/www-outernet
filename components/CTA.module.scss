@@ -1,25 +1,66 @@
 .wrapper {
-    background-color: var(--navy);
-    color: var(--khaki);
-    padding: 7rem;
-    text-align: center;
-    position: relative;
-    background-image: url(/about-bg.png);
+  background-color: var(--navy);
+  color: var(--khaki);
+  padding: 8rem 7rem;
+  text-align: center;
+  position: relative;
+  background-image: url(/about-bg.png);
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-    h1 {
-        font-family: "John Muir";
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
+  p {
+    margin-top: 0;
+    margin-inline: auto;
+  }
+}
 
-    p {
-        max-width: 75vw;
-        margin-top: 0;
-        margin-inline: auto;
-    }
+.forms {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1000px;
+  margin: auto;
+
+  p {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  input {
+    width: 100%;
+    background: rgb(255, 255, 255, 0.1);
+    border: 1px var(--khaki) solid;
+    line-height: 30px;
+    color: var(--khaki);
+    font-family: Fixel;
+    padding: 4px 8px;
+    font-size: inherit;
+    backdrop-filter: blur(2px);
+  }
+}
+
+.border {
+  width: 100vw;
+  margin-left: -7rem;
+  margin-bottom: -9rem;
+}
+
+@media screen and (max-width: 900px) {
+  .forms {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    padding: 8rem 10vw;
+  }
+
+  .border{
+    margin-left: -10vw;
+  }
 }

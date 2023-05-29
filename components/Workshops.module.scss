@@ -6,15 +6,7 @@
     > div {
         flex-basis: 60%;
     }
-
-    h1 {
-        font-family: "John Muir";
-        text-transform: uppercase;
-        font-size: 3rem;
-    }
-
     p {
-        font-size: 1.5rem;
         line-height: 1.6;
     }
 }
@@ -25,3 +17,10 @@
     padding: 4px 8px;
     border-radius: 8px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+    }
+  }

@@ -1,22 +1,24 @@
 import styles from "./FAQ.module.scss";
+import { Slide, Fade } from "react-reveal";
 
 export default function FAQ() {
     return (
         <>
             <section className={styles.wrapper}>
-                <h1>You might be wondering...</h1>
+                <h1><Slide>You might be wondering...</Slide></h1>
                 <div className={styles.faq}>
                     <div>
+                        <Fade delay={200}>
                         <div
                             className={styles.qa}
-                            style={{ minHeight: "400px" }}>
+                            >
                             <h2>What is this?</h2>
                             <p>
-                                Outernet is built by and for high schoolers.
-                                Graduating seniors and middle schoolers are also
-                                welcome to join us on Otis.
+                                Outernet is 4 day hacker camp in Vermont organized by Hack Club, a 501(c)3 nonprofit that supports a global community of 25k high school makers.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={400}>
                         <div className={styles.qa}>
                             <h2>Who can come?</h2>
                             <p>
@@ -25,13 +27,17 @@ export default function FAQ() {
                                 welcome to join us on Otis.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={600}>
                         <div className={styles.qa}>
                             <h2>How much does this event cost?</h2>
                             <p>
-                                It’s completely free - food is included and
+                                It’s completely free — food and accomodations are included — and
                                 travel stipends are available.
                             </p>
                         </div>
+                        </Fade>
+                        <Fade delay={800}>
                         <div className={styles.qa}>
                             <h2>What amenities will be available?</h2>
                             <p>
@@ -42,8 +48,10 @@ export default function FAQ() {
                                 site.
                             </p>
                         </div>
+                        </Fade>
                     </div>
                     <div>
+                        <Fade delay={1000}>
                         <div className={styles.qa}>
                             <h2>What should I bring?</h2>
                             <ul>
@@ -59,6 +67,8 @@ export default function FAQ() {
                                 <li>An open mind</li>
                             </ul>
                         </div>
+                        </Fade>
+                        <Fade delay={1200}>
                         <div className={styles.qa}>
                             <h2>My parents are worried!</h2>
                             <p>
@@ -68,7 +78,9 @@ export default function FAQ() {
                                 supervised by background checked staff and
                                 overseen by 24/7 security staff.
                             </p>
+                            <p>Find more resources (including information sessions) at our parents guide <a href="/">here</a>.</p>
                         </div>
+                        </Fade>
                     </div>
                 </div>
             </section>

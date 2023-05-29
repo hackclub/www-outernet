@@ -1,6 +1,5 @@
 .border {
     background-image: url(/about-bg.png);
-  min-height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,17 +46,15 @@
     z-index: 4;
   }
 
-  h1 {
-    font-family: "John Muir";
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
-
   p {
     color: var(--lightgold);
-    font-size: 22px;
     line-height: 1.6;
   }
+}
+
+.polaroids {
+  position: relative;
+  margin-top: -20%;
 }
 
 .title {
@@ -68,8 +65,27 @@
 }
 
 .paragraph {
-  font-size: 22px;
   div {
     margin-top: 24px;
   }
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 10vw;
+    .container {
+      flex-direction: column;
+      padding-bottom: 300px;
+    }
+  }
+
+  .polaroids {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .container {img {
+    border: 8px solid var(--khaki);
+  }
+}
 }
