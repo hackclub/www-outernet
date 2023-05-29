@@ -50,10 +50,12 @@
 
 .eventtype::placeholder {
   color: var(--lightgold)!important;
+  opacity: 0.65;
 }
 
 .maininput::placeholder {
-  color: white;
+  color: var(--khaki);
+  opacity: 0.65;
 }
 
 .timetable {
