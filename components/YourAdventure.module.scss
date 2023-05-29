@@ -48,6 +48,14 @@
   font-weight: 600;
 }  
 
+.eventtype::placeholder {
+  color: var(--lightgold)!important;
+}
+
+.maininput::placeholder {
+  color: white;
+}
+
 .timetable {
   display: flex;
   width: 100%;
