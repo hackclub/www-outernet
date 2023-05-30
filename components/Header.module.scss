@@ -99,7 +99,7 @@
 }
 
 .parallaxGround {
-  transform: translateZ(-100px) scale(2);
+  // transform: translateZ(-100px) scale(2);
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -136,7 +136,7 @@
 
 @media screen and (min-width: 1600px) {
   .header {
-    min-height: 135vh;
+    min-height: 80vw;
   }
 
   .content {
@@ -161,13 +161,13 @@
   }
 
   .flag {
-    width: 200px;
+    width: 150px;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .header {
-    min-height: 120vh;
+    min-height: 82vw;
   }
 
   .content {
@@ -182,7 +182,7 @@
 
 @media screen and (max-width: 1400px) {
   .header {
-    min-height: 110vh;
+    min-height: 82vw;
   }
 
   .content h1 {
@@ -202,13 +202,13 @@
 
   .parallaxGround {
     img {
-      width: 120vw;
+      width: 100vw;
       top: 0;
     }
   }
 
   .header {
-    min-height: 110vh;
+    min-height: 85vw;
     background-size: 120vw;
   }
 
@@ -221,7 +221,7 @@
 
 @media screen and (max-width: 950px) {
   .header {
-    min-height: 100vh;
+    min-height: 70vw;
     background-size: 150vw;
     background-position: 0px 150px;
   }
@@ -241,13 +241,13 @@
   }
 
   .flag {
-    width: 150px;
+    width: 120px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .header {
-    min-height: 100vh;
+    min-height: 100vw;
     background-size: 150vw;
     background-position: -50px 200px;
   }
@@ -308,6 +308,7 @@
     background-size: 250vw;
     background-position: -400px 250px;
     padding-bottom: 200px;
+    min-height: 150vw;
   }
   .content {
     h1 {
@@ -331,11 +332,12 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .header {
       background-size: 250vw;
       background-position: -400px 250px;
       padding-bottom: 200px;
+      min-height: 90vw;
     }
     .content {
       h1 {
@@ -349,7 +351,7 @@
   
     .parallaxGround {
       img {
-        width: 200vw;
+        width: 240vw;
         left: -100px;
       }
     }

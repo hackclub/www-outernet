@@ -6,8 +6,17 @@
     > div {
         flex-basis: 60%;
     }
+}
+
+.ball {
+    h1 {
+        font-size: large !important;
+        line-height: 1.6;
+    }
+
     p {
         line-height: 1.6;
+        font-size: medium !important;
     }
 }
 
