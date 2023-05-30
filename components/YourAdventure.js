@@ -169,6 +169,7 @@ export const YourAdventure = () => {
                                   >
                                     {event.editable ?
                                       <>
+                                        <p className={styles.eventtype} value={event.type} style={{background: 'none', padding: 0, border: 'none'}}>Your own activity...</p>
                                         <input onChange={(e) => {
                                           let tempEvents = events
                                           tempEvents = tempEvents.map(mappedEvent => {
@@ -176,19 +177,7 @@ export const YourAdventure = () => {
                                               return mappedEvent
                                             }
                                             else {
-                                              return {...mappedEvent, type: e.target.value}
-                                            }
-                                          })
-                                          setEvents(tempEvents)
-                                        }} className={styles.eventtype} value={event.type} placeholder="Type" style={{background: 'none', padding: 0, border: 'none'}}/>
-                                        <input onChange={(e) => {
-                                          let tempEvents = events
-                                          tempEvents = tempEvents.map(mappedEvent => {
-                                            if(mappedEvent.id != event.id){
-                                              return mappedEvent
-                                            }
-                                            else {
-                                              return {...mappedEvent, title: e.target.value}
+                                              return {...mappedEvent, title: e.target.value, type: "Your own activity..."}
                                             }
                                           })
                                           setEvents(tempEvents)
