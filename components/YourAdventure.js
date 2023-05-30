@@ -50,6 +50,12 @@ const eventList = [
     type: "outdoor activity",
     id: "7",
   },
+  {
+    title: "",
+    type: "",
+    id: "8",
+    editable: true
+  }
 ];
 
 export const YourAdventure = () => {
@@ -67,17 +73,23 @@ export const YourAdventure = () => {
     if (!result.destination) return;
 
     // please forgive me, for I have sinned -- Shubham Patil
+    
 
     const arrKey = {
       timetable: [events, setEvents],
       timetable2: [newEvents, setNewEvents],
     };
+    
 
     let fromArr = [...arrKey[result.source.droppableId][0]];
     let toArr = [...arrKey[result.destination.droppableId][0]];
 
     let sameArray =
       result.source.droppableId === result.destination.droppableId;
+      
+    let custom = arrKey[result.source.droppableId][0][result.source.index].editable && result.source.droppableId == "timetable" && !sameArray || false
+    
+    if(arrKey[result.source.droppableId][0][result.source.index].title.trim() == "" || arrKey[result.source.droppableId][0][result.source.index].type.trim() == "") return
 
     const output = insertAndShift(
       fromArr,
@@ -97,7 +109,12 @@ export const YourAdventure = () => {
       if (result.source.droppableId === "timetable2") {
         setNewEvents(output.fromArr);
       } else if (result.source.droppableId === "timetable") {
-        setEvents(output.fromArr);
+        setEvents(custom && output.fromArr.filter(event => event.editable && event.title == "" && event.type == "").length == 0 ? [...output.fromArr, {
+            title: "",
+            type: "",
+            id: new Date().toISOString(),
+            editable: true
+          }] : output.fromArr );
       }
     }
 
@@ -150,10 +167,41 @@ export const YourAdventure = () => {
                                     {...providedDroppable.dragHandleProps}
                                     className={styles.event}
                                   >
-                                    <p className={styles.eventtype}>
-                                      {event.type}
-                                    </p>
-                                    <h4>{event.title}</h4>
+                                    {event.editable ?
+                                      <>
+                                        <input onChange={(e) => {
+                                          let tempEvents = events
+                                          tempEvents = tempEvents.map(mappedEvent => {
+                                            if(mappedEvent.id != event.id){
+                                              return mappedEvent
+                                            }
+                                            else {
+                                              return {...mappedEvent, type: e.target.value}
+                                            }
+                                          })
+                                          setEvents(tempEvents)
+                                        }} className={styles.eventtype} value={event.type} placeholder="Type" style={{background: 'none', padding: 0, border: 'none'}}/>
+                                        <input onChange={(e) => {
+                                          let tempEvents = events
+                                          tempEvents = tempEvents.map(mappedEvent => {
+                                            if(mappedEvent.id != event.id){
+                                              return mappedEvent
+                                            }
+                                            else {
+                                              return {...mappedEvent, title: e.target.value}
+                                            }
+                                          })
+                                          setEvents(tempEvents)
+                                        }} className={styles.maininput} value={event.title} placeholder="Activity" style={{background: 'none', padding: 0, border: 'none'}}/>
+                                      </>
+                                      :
+                                      <>
+                                        <p className={styles.eventtype}>
+                                          {event.type} 
+                                        </p>
+                                        <h4>{event.title}</h4>
+                                      </>
+                                    }
                                   </div>
                                 );
                               }}

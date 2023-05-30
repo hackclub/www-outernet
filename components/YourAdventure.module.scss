@@ -30,6 +30,7 @@
     color: var(--khaki);
     margin: 0;
   }
+  
 }
 .eventtype {
   text-transform: uppercase;
@@ -37,6 +38,24 @@
   font-weight: bold;
   font-size: medium !important;
   color: var(--lightgold) !important;
+}
+
+.maininput {
+  color: var(--khaki);
+  font-size: 1.5em;
+  margin: 0;
+  width: 100%;
+  font-weight: 600;
+}  
+
+.eventtype::placeholder {
+  color: var(--lightgold)!important;
+  opacity: 0.65;
+}
+
+.maininput::placeholder {
+  color: var(--khaki);
+  opacity: 0.65;
 }
 
 .timetable {
