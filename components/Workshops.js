@@ -166,7 +166,7 @@ export default function Workshops() {
                     maxHeight: "100%",
                     position: "relative",
                     cursor: "default !important",
-                    minHeight: "400px"
+                    minHeight: "400px",
                 }}
                 className={styles.ball}
                 id="ball"

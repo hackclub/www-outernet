@@ -191,13 +191,13 @@
   }
 
   .contentBg {
-    height: 400px;
+    height: 370px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   .contentBg {
-    height: 400px;
+    height: 320px;
   }
 
   .parallaxGround {
@@ -223,14 +223,14 @@
   .header {
     min-height: 70vw;
     background-size: 150vw;
-    background-position: 0px 150px;
+    background-position: 0px 0px;
   }
   .content {
     padding: 8rem 4rem;
   }
 
   .contentBg {
-    height: 350px;
+    height: 150px;
   }
 
   .parallaxGround {
@@ -259,7 +259,7 @@
   }
 
   .contentBg {
-    height: 300px;
+    height: 200px;
   }
 
   .content {
@@ -299,7 +299,7 @@
   }
 
   .contentBg {
-    height: 350px;
+    height: 400px;
   }
 }
 
@@ -341,11 +341,16 @@
     }
     .content {
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
       }
   
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin-top: 10px;
+        max-width: 70%;
       }
     }
   
