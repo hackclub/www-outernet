@@ -96,7 +96,7 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>What have you all done in years prior?</h2>
                 <p>
-                  Glad you asked! We've ran overnight hackathons in <a href="">San Francisco</a>, <a href="https://youtu.be/KLx4NZZPzMc">New Delhi</a>, and <a href="">Boston</a>. 
+                  Glad you asked! We've ran overnight hackathons in <a href="https://youtu.be/PnK4gzO6S3Q">San Francisco</a>, <a href="https://youtu.be/KLx4NZZPzMc">New Delhi</a>, and <a href="">Boston</a>. 
                   Two years ago, we charted a train from Vermont to Los Angles and ran the world's longest hackathon over land. We're not kidding, check out the mini-documentary: <a href="https://youtu.be/2BID8_pGuqA">youtu.be/2BID8_pGuqA</a>.
                 </p>
               </div>
