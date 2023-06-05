@@ -60,20 +60,26 @@ export default function FAQ() {
             </Fade>
           </div>
           <div>
-            <Fade delay={1100}>
+            <Fade delay={1000}>
+              <div className={styles.qa}>
+                <h2>Where is Outernet hosted?</h2>
+                <p>Outernet is hosted at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenant Hills Campground</a> in the Northeast Kingdom region of Vermont, USA. The venue’s address is <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">246 Covenant Hills Rd, Cabot, VT 05647</a>.</p>
+              </div>
+            </Fade>
+            <Fade delay={1200}>
               <div className={styles.qa}>
                 <h2>What are the sleeping arrangements?</h2>
                 <p>Most folks will be staying in 8-12 person camps that are gender-seperated, we'll provide bedding & tents.
                 You're also welcome to bring your own tent setup.</p>
               </div>
             </Fade>
-            <Fade delay={1000}>
+            <Fade delay={1400}>
               <div className={styles.qa}>
                 <h2>What should I bring?</h2>
                 <p>Sturdy shoes, casual clothes for four days, a rain jacket, a hoodie, swimming wear, a towel, simple toiletries, a flashlight, a laptop plus it's charger, and an open mind.</p>
               </div>
             </Fade>
-            <Fade delay={1200}>
+            <Fade delay={1600}>
               <div className={styles.qa}>
                 <h2>My parents are worried!</h2>
                 <p>
@@ -86,7 +92,7 @@ export default function FAQ() {
                 </p>
               </div>
             </Fade>
-            <Fade delay={1400}>
+            <Fade delay={1800}>
               <div className={styles.qa}>
                 <h2>What have you all done in years prior?</h2>
                 <p>
