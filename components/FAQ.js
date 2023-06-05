@@ -87,8 +87,8 @@ export default function FAQ() {
                   <a href="mailto:outernet@hackclub.com">outernet@hackclub.com</a> and we'll make sure to answer all their
                   questions. Outernet will be supervised by background checked
                   staff and overseen by 24/7 security staff. Find more resources 
-                  (including information sessions) in our
-                  parents guide <a href="/">here</a>.
+                  (including information sessions) in <a href="/">our
+                  parents guide</a>.
                 </p>
               </div>
             </Fade>
