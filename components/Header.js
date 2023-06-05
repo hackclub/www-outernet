@@ -70,7 +70,7 @@ export default function Header() {
             </p>
           </Fade>
           <Fade delay={700}>
-            <p style={{ marginBlockStart: '0em' }}>Northeast Kingdom, VT, USA &middot; 28th to 31st July, 2023</p>
+            <p style={{ marginBlockStart: '0em' }}>Northeast Kingdom, Vermont, USA &middot; 28th to 31st July, 2023</p>
           </Fade>
           <br />
           <Fade delay={900}>
