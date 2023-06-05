@@ -74,6 +74,9 @@ const Meta = ({
     />
     {manifest && <link key="manifest" rel="manifest" href={manifest} />}
     {children}
+    <link id="rainbow" rel="stylesheet" href="/rainbow.css" media="(min-width: 100000000000000000000000000px)"/>
+    <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
+    <script src="/rainbow.js"></script>
   </Head>
 )
 
