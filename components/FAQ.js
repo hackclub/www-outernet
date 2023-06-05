@@ -52,8 +52,8 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>What amenities will be available?</h2>
                 <p>
-                  Portable restrooms (porta-potties) & sinks (pumped daily!).
-                  Potable drinking water accessible via well. Power available in
+                  Hot showers, unisex toilets, and sinks!
+                  Potable drinking water is accessible via well. Power is available in
                   select areas on site. Limited WiFi will be available on site (don't worry, we'll make it work!).
                 </p>
               </div>
