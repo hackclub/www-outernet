@@ -1,5 +1,4 @@
 import styles from "./About.module.scss";
-import Stars from "./Stars";
 import { useRef } from "react";
 import { Fade, Zoom } from "react-reveal";
 
@@ -51,6 +50,7 @@ export default function About() {
                     zIndex: 0,
                   }}
                   src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/1238640104-c9057168-862e-46a4-9729-49a79115d2d2-min.jpeg"
+                  alt="Hackers sitting in a circle"
                 />
                 <img
                   style={{
@@ -59,6 +59,7 @@ export default function About() {
                     top: "50%",
                   }}
                   src="https://cloud-ilhjjq543-hack-club-bot.vercel.app/0238642298-6c1fd9c7-49a4-4bc8-ab17-c841c6bd6f8b.jpeg"
+                  alt="A group of hackers at Zephyr; Hack Club's 2020 summer event."
                 />
               </div>
               </Zoom>

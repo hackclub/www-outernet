@@ -87,14 +87,14 @@ export const YourAdventure = () => {
 
     let custom =
       (arrKey[result.source.droppableId][0][result.source.index].editable &&
-        result.source.droppableId == "timetable" &&
+        result.source.droppableId === "timetable" &&
         !sameArray) ||
       false;
 
     if (
-      arrKey[result.source.droppableId][0][result.source.index].title.trim() ==
+      arrKey[result.source.droppableId][0][result.source.index].title.trim() ===
         "" ||
-      arrKey[result.source.droppableId][0][result.source.index].type.trim() ==
+      arrKey[result.source.droppableId][0][result.source.index].type.trim() ===
         ""
     )
       return;
@@ -120,8 +120,8 @@ export const YourAdventure = () => {
         setEvents(
           custom &&
             output.fromArr.filter(
-              (event) => event.editable && event.title == "" && event.type == ""
-            ).length == 0
+              (event) => event.editable && event.title === "" && event.type === ""
+            ).length === 0
             ? [
                 ...output.fromArr,
                 {
@@ -174,7 +174,7 @@ export const YourAdventure = () => {
                 {(provided) => (
                   <>
                     <div
-                      style={{ scidth: "400px", marginRight: "3vw" }}
+                      style={{ width: "400px", marginRight: "3vw" }}
                       {...provided.droppableProps}
                       ref={provided.innerRef}
                       className={styles.timetableItem}
@@ -214,7 +214,7 @@ export const YourAdventure = () => {
                                               tempEvents = tempEvents.map(
                                                 (mappedEvent) => {
                                                   if (
-                                                    mappedEvent.id != event.id
+                                                    mappedEvent.id !== event.id
                                                   ) {
                                                     return mappedEvent;
                                                   } else {
@@ -230,11 +230,12 @@ export const YourAdventure = () => {
                                             }}
                                             className={styles.maininput}
                                             value={event.title}
-                                            placeholder="Activity"
+                                            placeholder="Stargazing"
                                             style={{
                                               background: "none",
                                               padding: 0,
                                               border: "none",
+                                              outline: "none"
                                             }}
                                           />
                                         </>
@@ -271,7 +272,7 @@ export const YourAdventure = () => {
                     >
                       {[
                         9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
-                      ].map((num, i) => {
+                      ].map((num) => {
                         return (
                           <p
                             key={`hour-${num}`}
@@ -283,7 +284,7 @@ export const YourAdventure = () => {
                           >
                             {num > 12
                               ? `${num - 12}pm`
-                              : num == 12
+                              : num === 12
                               ? `12pm`
                               : `${num}am`}
                           </p>
