@@ -1,0 +1,57 @@
+h1,h2,h3,h4,h5,h6,p,a {
+    animation: rainbow 3s linear 0s infinite !important;
+    color: red;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    16.6666666667% {
+      color: orange;
+    }
+    33.3333333334% {
+      color: yellow;
+    }
+    50.0000000001% {
+      color: green
+    }
+    66.6666666668% {
+      color: cyan;
+    }
+    83.3333333335% {
+      color: blue;
+    }
+    100% {
+      color: violet;
+    }
+  }
+  @keyframes rainbow-bg {
+    0% {
+      background-color: red;
+    }
+    16.6666666667% {
+      background-color: orange;
+    }
+    33.3333333334% {
+      background-color: yellow;
+    }
+    50.0000000001% {
+      background-color: green
+    }
+    66.6666666668% {
+      background-color: cyan;
+    }
+    83.3333333335% {
+      background-color: blue;
+    }
+    100% {
+      background-color: violet;
+    }
+  }
+  
+  body {
+    filter: hue-rotate(90deg) saturate(200%) !important;
+    background-color: red !important;
+    animation: rainbow-bg 3s linear 0s infinite !important;
+  }
