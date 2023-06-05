@@ -153,7 +153,6 @@ export default function Workshops() {
                     Propose an idea, form your guild and build something
                     for the Outernet community to enjoy at{" "}
                     <a
-                        className={styles.link}
                         href="https://github.com/hackclub/outernet"
                         target="_blank">
                         github.com/hackclub/outernet.

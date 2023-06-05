@@ -14,32 +14,34 @@ export default function CTA() {
   return (
     <section className={styles.wrapper} ref={containerRef}>
       <div>
-        <h1>
+        <h1 style={{marginBlockEnd: '0.3em'}}>
           <Fade>You make this summer epic...</Fade>
         </h1>
         <Fade delay={300}>
           <p style={{ marginBottom: 0 }}>
             No matter where our events take us, the key to the magic has always
-            been you. <br />Join us and sign up.
+            been you. <br /> Sign up below; let's make this the most meaningful weekend of the year.
           </p>
         </Fade>
         <Fade delay={500}>
           <div className={styles.forms}>
             <div>
-              <p>Name</p>
+              <p style={{marginBottom: '4px', fontWeight: 500}}>Name</p>
               <input
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 value={name}
+                placeholder="Orpheus Smith"
                 required
               />
             </div>
             <div>
-              <p>Email</p>
+              <p style={{marginBottom: '4px', fontWeight: 500}}>Email</p>
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 value={email}
+                placeholder="orpheus@hackclub.com"
                 required
               />
             </div>
@@ -50,6 +52,7 @@ export default function CTA() {
           <Button
             backgroundColor="var(--khaki)"
             textColor="var(--navy)"
+            style={{fontSize: '1.4em'}}
             onClick={() => {
               if (typeof window !== undefined) {
                 window.location.href = `https://register.outernet.hackclub.com/?Name=${name}&Email=${email}`;
