@@ -1,5 +1,5 @@
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', async function () {
-    if(confirm("WARNING:\nStrobing effects will appear, do you wish to proceed?")) {
+    if(confirm("🚨 🚨 🚨\nStrobing effects will appear; you've been warned.")) {
         document.getElementById("rainbow").setAttribute("media", "all");
     }
 });
