@@ -373,4 +373,29 @@
       height: 150px;
     }
   }
+
+
+  @media screen and (max-width: 320px) {
+  
+    .parallaxGround {
+      visibility: hidden;
+    }
+
+    .content {
+      h1 {
+        font-size: 1.8rem;
+      }
+  
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        margin-top: 10px;
+        max-width: 90%;
+        margin-bottom: 40px;
+      }
+    }
+   
+  }
   
