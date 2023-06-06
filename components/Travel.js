@@ -8,8 +8,7 @@ export default function Travel() {
       <div className={styles.header}>
         <Fade>
           <h1>
-            Outernet is free and our gift to you; <br />
-            all you have to do is get here.
+            Outernet is a camp under the stars for high-school hackers from across the world
           </h1>
         </Fade>
       </div>
@@ -17,15 +16,15 @@ export default function Travel() {
         <Fade>
           <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
           <p>
-            Outernet is taking place in Vermont's Northeast Kingdom (Cabot,
-            05647). Shuttles will be provided from:
+            Outernet is entirely free and taking place in Vermont's Northeast Kingdom (Cabot,
+            05647) at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenenant Hills Campground</a>. Shuttles will be provided from:
           </p>
 
           <ul>
+            <li>Burlington International Airport</li>
             <li>Boston-Logan International Airport</li>
             <li>Manchester-Boston Regional Airport</li>
-            <li>Burlington International Airport</li>
-            <li> Boston South Station</li>
+            <li>Boston South Station</li>
           </ul>
           <p>
             The venue is also accessible via car{" "}
