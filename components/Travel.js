@@ -8,7 +8,7 @@ export default function Travel() {
       <div className={styles.header}>
         <Fade>
           <h1>
-            Outernet is a camp under the stars for high-school hackers from across the world
+            Outernet is a camp under the stars
           </h1>
         </Fade>
       </div>
