@@ -15,7 +15,7 @@ export default function Travel() {
       </div>
       <div className={styles.main}>
         <Fade>
-          <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
+          <img src="https://lh3.googleusercontent.com/wTQaY8GnZQbkoSvsyDgb-GK27Pc4nIBnoGk2lJWMWdPQf1RPrCwX5L6GOwv5bC7SFMSsCkk4mnK2gNIW4tSpriMNUHDCnsdNjoBeVEqHXTWUiiEWfytP0Q=s1600" />
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
             05841). Shuttles will be provided from:

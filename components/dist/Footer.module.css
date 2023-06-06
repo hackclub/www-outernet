@@ -1,0 +1,35 @@
+.footerImage {
+  background-color: var(--orange);
+  padding-top: 0%;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: var(--navy);
+}
+
+.footerOne {
+  background: linear-gradient(90deg, #7F7C52 14.01%, #9D6C43 50.42%, #BD5B34 88.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline;
+  float: left;
+  font-size: 1.5em;
+  padding-left: 3em;
+  padding-bottom: 0.5em;
+}
+
+.footerTwo {
+  background: linear-gradient(90deg, #7F7C52 14.01%, #9D6C43 50.42%, #BD5B34 88.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline;
+  float: right;
+  font-size: 1.5em;
+  padding-right: 3em;
+  padding-bottom: 0.5em;
+}

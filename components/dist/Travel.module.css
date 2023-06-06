@@ -1,0 +1,57 @@
+.wrapper {
+  padding-bottom: 14px;
+  background-color: var(--olive);
+  padding: 4rem 10vw;
+  position: relative;
+}
+@media (max-width: 1300px) {
+  .wrapper br {
+    display: none;
+  }
+}
+.wrapper h1 {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  color: var(--khaki);
+  font-family: "John Muir";
+  text-transform: uppercase;
+}
+.wrapper:after {
+  content: " ";
+  border-bottom: 10px solid var(--olive);
+  display: block;
+  width: 100vw;
+  left: 0;
+  position: relative;
+  z-index: 4;
+  position: absolute;
+  bottom: -20px;
+}
+
+@media (min-width: 900px) {
+  .main img {
+    width: 600px !important;
+    height: 459px;
+    object-fit: cover;
+    float: right;
+    margin-left: 32px;
+    margin-bottom: 8px !important;
+  }
+}
+.main {
+  margin: auto;
+  width: 100%;
+}
+.main p, .main ul {
+  color: #F9E1B7;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+}
+.main a {
+  color: #F9E1B7;
+}
+.main img {
+  border: 5px solid white;
+  width: 100%;
+  margin-bottom: 24px;
+}
