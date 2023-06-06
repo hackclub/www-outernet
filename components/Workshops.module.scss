@@ -9,6 +9,9 @@
 }
 
 .ball {
+    div {
+        cursor: default !important;
+    }
     h1 {
         font-size: large !important;
         line-height: 1.6;

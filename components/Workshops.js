@@ -19,16 +19,16 @@ export default function Workshops() {
             text: "Find makerware to hack on"
         },
         {
-            heading: "The cafe",
-            text: "We're serving matcha, coffee, and tea!"
+            heading: "Orpheus Café & Bakery",
+            text: "We're serving matcha, coffee, tea, and baked goods!"
         },
         {
-            heading: "Immigration",
-            text: "The gateway to Outernet!"
+            heading: "Passport Authority",
+            text: "We issue documents to explore the Outernet!"
         },
         {
-            heading: "Outernet LAN",
-            text: "We're building a mesh intranet"
+            heading: "OuterLAN",
+            text: "We're building a site-wide intranet!"
         }
     ];
     const ballsRef = useRef([]);
@@ -153,7 +153,6 @@ export default function Workshops() {
                     Propose an idea, form your guild and build something
                     for the Outernet community to enjoy at{" "}
                     <a
-                        className={styles.link}
                         href="https://github.com/hackclub/outernet"
                         target="_blank">
                         github.com/hackclub/outernet.
@@ -163,10 +162,11 @@ export default function Workshops() {
             </Zoom>
             <div
                 style={{
-                    maxHeight: "100%",
                     position: "relative",
                     cursor: "default !important",
-                    minHeight: "400px"
+                    minHeight: "700px",
+                    marginBottom: "3rem",
+                    maxHeight: "100%"
                 }}
                 className={styles.ball}
                 id="ball"

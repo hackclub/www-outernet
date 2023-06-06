@@ -17,8 +17,8 @@ export default function Travel() {
         <Fade>
           <img src="https://lh3.googleusercontent.com/wTQaY8GnZQbkoSvsyDgb-GK27Pc4nIBnoGk2lJWMWdPQf1RPrCwX5L6GOwv5bC7SFMSsCkk4mnK2gNIW4tSpriMNUHDCnsdNjoBeVEqHXTWUiiEWfytP0Q=s1600" />
           <p>
-            Outernet is taking place in Vermont's Northeast Kingdom (Greensboro,
-            05841). Shuttles will be provided from:
+            Outernet is taking place in Vermont's Northeast Kingdom (Cabot,
+            05647). Shuttles will be provided from:
           </p>
 
           <ul>
@@ -29,7 +29,7 @@ export default function Travel() {
           </ul>
           <p>
             The venue is also accessible via car{" "}
-            <a href="https://goo.gl/maps/3aapuzHCzKBMM5L77?coh=178573&entry=tt">
+            <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">
               (directions)
             </a>
             .

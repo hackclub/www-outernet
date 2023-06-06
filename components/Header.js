@@ -65,18 +65,19 @@ export default function Header() {
             </Zoom>
           </h1>
           <Fade delay={500}>
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ marginBottom: 0, marginBlockEnd: '0.4em' }}>
               A hacker oasis in nature for high school hackers
             </p>
           </Fade>
           <Fade delay={700}>
-            <p>Northeast Kingdom, VT, USA &middot; 28th to 31st July, 2023</p>
+            <p style={{ marginBlockStart: '0em' }}>Northeast Kingdom, Vermont, USA &middot; 28th to 31st July, 2023</p>
           </Fade>
           <br />
           <Fade delay={900}>
             <Button
               backgroundColor="white"
               textColor="var(--orange)"
+              style={{ fontSize: '1.4em'}}
               href="https://register.outernet.hackclub.com/"
             >
               Join us
