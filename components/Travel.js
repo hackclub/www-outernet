@@ -21,8 +21,8 @@ export default function Travel() {
           </p>
 
           <ul>
-            <li>Burlington International Airport</li>
             <li>Boston-Logan International Airport</li>
+            <li>Burlington International Airport</li>
             <li>Manchester-Boston Regional Airport</li>
             <li>Boston South Station</li>
           </ul>
