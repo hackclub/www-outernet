@@ -17,7 +17,7 @@ export default function Travel() {
           <img src="https://cloud-gegnghd4o-hack-club-bot.vercel.app/018omgd-wattsm-297_1.png" />
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Cabot,
-            05647) at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenenant Hills Campground</a>. Shuttles will be provided from:
+            05647) at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenant Hills Campground</a>. Shuttles will be provided from:
           </p>
 
           <ul>
