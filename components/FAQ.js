@@ -68,12 +68,12 @@ export default function FAQ() {
                 <h2>Where is Outernet hosted?</h2>
                 <p>
                   Outernet is hosted at{" "}
-                  <a href="https://www.covenanthillsvt.org/who-we-are.html">
+                  <a href="https://www.covenanthillsvt.org/who-we-are.html" target="_blank">
                     Covenant Hills Campground
                   </a>{" "}
                   in the Northeast Kingdom region of Vermont, USA. The venue’s
                   address is{" "}
-                  <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">
+                  <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9" target="_blank">
                     246 Covenant Hills Rd, Cabot, VT 05647
                   </a>
                   .
@@ -112,7 +112,7 @@ export default function FAQ() {
                   will be supervised by background checked staff and overseen by
                   24/7 security staff. Find more resources (including
                   information sessions) in{" "}
-                  <a href="https://hack.af/outernet-parents">
+                  <a href="https://hack.af/outernet-parents" target="_blank">
                     our parents guide
                   </a>
                   .
@@ -124,12 +124,12 @@ export default function FAQ() {
                 <h2>What have you all done in years prior?</h2>
                 <p>
                   Glad you asked! We've ran overnight hackathons in{" "}
-                  <a href="https://youtu.be/PnK4gzO6S3Q">San Francisco</a>,{" "}
-                  <a href="https://youtu.be/KLx4NZZPzMc">New Delhi</a>, and{" "}
-                  <a href="">Boston</a>. Two years ago, we charted a train from
+                  <a href="https://youtu.be/PnK4gzO6S3Q" target="_blank">San Francisco</a> and
+                  <a href="https://youtu.be/KLx4NZZPzMc" target="_blank">New Delhi</a>. 
+                  Two years ago, we charted a train from
                   Vermont to Los Angles and ran the world's longest hackathon
                   over land. We're not kidding, check out the mini-documentary:{" "}
-                  <a href="https://youtu.be/2BID8_pGuqA">
+                  <a href="https://youtu.be/2BID8_pGuqA" target="_blank">
                     youtu.be/2BID8_pGuqA
                   </a>
                   .
