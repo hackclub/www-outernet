@@ -39,7 +39,7 @@ export default function Travel() {
           <p>
             On your registation form, indicate that you'd like to recieve
             details about long-distance travel and we'll email the information
-            about stipends and discounted flights to you and your parents. View our
+            about stipends and discounted flights to you and your parents. View our{" "}
             <a href="https://hack.af/outernet-travel-guide">travel guide</a>{" "}
             for additional guidance.
           </p>
