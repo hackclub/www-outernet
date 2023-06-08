@@ -38,14 +38,10 @@ export default function Travel() {
           </p>
           <p>
             On your registation form, indicate that you'd like to recieve
-            details about long-distance travel and we'll email more information
-            about stipends and discounted flights to you and your parents.
-          </p>
-
-          <p>
-            Here's a quick{" "}
+            details about long-distance travel and we'll email the information
+            about stipends and discounted flights to you and your parents. View our
             <a href="https://hack.af/outernet-travel-guide">travel guide</a>{" "}
-            that has all the information on getting to Outernet!
+            for additional guidance.
           </p>
         </Fade>
       </div>
