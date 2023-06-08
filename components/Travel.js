@@ -9,7 +9,7 @@ export default function Travel() {
         <Fade>
           <h1>
             Outernet is free and our gift to you; <br />
-            all you have to do is get here.
+            let's make sure you can make it out here.
           </h1>
         </Fade>
       </div>
@@ -18,14 +18,14 @@ export default function Travel() {
           <img src="https://lh3.googleusercontent.com/wTQaY8GnZQbkoSvsyDgb-GK27Pc4nIBnoGk2lJWMWdPQf1RPrCwX5L6GOwv5bC7SFMSsCkk4mnK2gNIW4tSpriMNUHDCnsdNjoBeVEqHXTWUiiEWfytP0Q=s1600" />
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Cabot,
-            05647). Shuttles will be provided from:
+            05647) at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenant Hills Campground</a>. Shuttles will be provided from:
           </p>
 
           <ul>
             <li>Boston-Logan International Airport</li>
-            <li>Manchester-Boston Regional Airport</li>
             <li>Burlington International Airport</li>
-            <li> Boston South Station</li>
+            <li>Manchester-Boston Regional Airport</li>
+            <li>Boston South Station</li>
           </ul>
           <p>
             The venue is also accessible via car{" "}
