@@ -14,9 +14,10 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>What is this?</h2>
                 <p>
-                  Outernet is four day hacker camp in Vermont for high schoolers with workshops, 
-                  mini-hackathons, CTFs, and similar technical events. It's organized by Hack Club, 
-                  a 501(c)3 nonprofit that supports a global community of 25k high school makers.
+                  Outernet is four day hacker camp in Vermont for high schoolers
+                  with workshops, mini-hackathons, CTFs, and similar technical
+                  events. It's organized by Hack Club, a 501(c)3 nonprofit that
+                  supports a global community of 25k high school makers.
                 </p>
               </div>
             </Fade>
@@ -33,7 +34,8 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>How much does this event cost?</h2>
                 <p>
-                  Outernet is completely free, food and accomodation are included. Travel stipends are also available.
+                  Outernet is completely free, food and accomodation are
+                  included. Travel stipends are also available.
                 </p>
               </div>
             </Fade>
@@ -52,9 +54,10 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>What amenities will be available?</h2>
                 <p>
-                  Hot showers, unisex toilets, and sinks!
-                  Potable drinking water is accessible via well. Power is available in
-                  select areas on site. Limited WiFi will be available on site (don't worry, we'll make it work!).
+                  Hot showers, unisex toilets, and sinks! Potable drinking water
+                  is accessible via well. Power is available in select areas on
+                  site. Limited WiFi will be available on site (don't worry,
+                  we'll make it work!).
                 </p>
               </div>
             </Fade>
@@ -63,20 +66,38 @@ export default function FAQ() {
             <Fade delay={1000}>
               <div className={styles.qa}>
                 <h2>Where is Outernet hosted?</h2>
-                <p>Outernet is hosted at <a href="https://www.covenanthillsvt.org/who-we-are.html">Covenant Hills Campground</a> in the Northeast Kingdom region of Vermont, USA. The venue’s address is <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">246 Covenant Hills Rd, Cabot, VT 05647</a>.</p>
+                <p>
+                  Outernet is hosted at{" "}
+                  <a href="https://www.covenanthillsvt.org/who-we-are.html">
+                    Covenant Hills Campground
+                  </a>{" "}
+                  in the Northeast Kingdom region of Vermont, USA. The venue’s
+                  address is{" "}
+                  <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">
+                    246 Covenant Hills Rd, Cabot, VT 05647
+                  </a>
+                  .
+                </p>
               </div>
             </Fade>
             <Fade delay={1200}>
               <div className={styles.qa}>
                 <h2>What are the sleeping arrangements?</h2>
-                <p>Most folks will be staying in 8-12 person camps that are gender-seperated, we'll provide bedding & tents.
-                You're also welcome to bring your own tent setup.</p>
+                <p>
+                  Most folks will be staying in 8-12 person camps that are
+                  gender-seperated, we'll provide bedding & tents. You're also
+                  welcome to bring your own tent setup.
+                </p>
               </div>
             </Fade>
             <Fade delay={1400}>
               <div className={styles.qa}>
                 <h2>What should I bring?</h2>
-                <p>Sturdy shoes, casual clothes for four days, a rain jacket, a hoodie, swimming wear, a towel, simple toiletries, a flashlight, a laptop plus it's charger, and an open mind.</p>
+                <p>
+                  Sturdy shoes, casual clothes for four days, a rain jacket, a
+                  hoodie, swimming wear, a towel, simple toiletries, a
+                  flashlight, a laptop plus it's charger, and an open mind.
+                </p>
               </div>
             </Fade>
             <Fade delay={1600}>
@@ -84,11 +105,17 @@ export default function FAQ() {
                 <h2>My parents are worried!</h2>
                 <p>
                   We're here to help, ask them to reach out to us at{" "}
-                  <a href="mailto:outernet@hackclub.com">outernet@hackclub.com</a> and we'll make sure to answer all their
-                  questions. Outernet will be supervised by background checked
-                  staff and overseen by 24/7 security staff. Find more resources 
-                  (including information sessions) in <a href="/">our
-                  parents guide</a>.
+                  <a href="mailto:outernet@hackclub.com">
+                    outernet@hackclub.com
+                  </a>{" "}
+                  and we'll make sure to answer all their questions. Outernet
+                  will be supervised by background checked staff and overseen by
+                  24/7 security staff. Find more resources (including
+                  information sessions) in{" "}
+                  <a href="https://hack.af/outernet-parents">
+                    our parents guide
+                  </a>
+                  .
                 </p>
               </div>
             </Fade>
@@ -96,8 +123,16 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>What have you all done in years prior?</h2>
                 <p>
-                  Glad you asked! We've ran overnight hackathons in <a href="https://youtu.be/PnK4gzO6S3Q">San Francisco</a>, <a href="https://youtu.be/KLx4NZZPzMc">New Delhi</a>, and <a href="">Boston</a>. 
-                  Two years ago, we charted a train from Vermont to Los Angles and ran the world's longest hackathon over land. We're not kidding, check out the mini-documentary: <a href="https://youtu.be/2BID8_pGuqA">youtu.be/2BID8_pGuqA</a>.
+                  Glad you asked! We've ran overnight hackathons in{" "}
+                  <a href="https://youtu.be/PnK4gzO6S3Q">San Francisco</a>,{" "}
+                  <a href="https://youtu.be/KLx4NZZPzMc">New Delhi</a>, and{" "}
+                  <a href="">Boston</a>. Two years ago, we charted a train from
+                  Vermont to Los Angles and ran the world's longest hackathon
+                  over land. We're not kidding, check out the mini-documentary:{" "}
+                  <a href="https://youtu.be/2BID8_pGuqA">
+                    youtu.be/2BID8_pGuqA
+                  </a>
+                  .
                 </p>
               </div>
             </Fade>

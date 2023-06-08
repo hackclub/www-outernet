@@ -29,10 +29,7 @@ export default function Travel() {
           </ul>
           <p>
             The venue is also accessible via car{" "}
-            <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">
-              (directions)
-            </a>
-            .
+            <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9">(directions)</a>.
           </p>
           <p>
             To ensure everyone has a chance to make it, our donors have funded a
@@ -43,6 +40,12 @@ export default function Travel() {
             On your registation form, indicate that you'd like to recieve
             details about long-distance travel and we'll email more information
             about stipends and discounted flights to you and your parents.
+          </p>
+
+          <p>
+            Here's a quick{" "}
+            <a href="https://hack.af/outernet-travel-guide">travel guide</a>{" "}
+            that has all the information on getting to Outernet!
           </p>
         </Fade>
       </div>
