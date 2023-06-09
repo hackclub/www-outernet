@@ -164,7 +164,6 @@ export default function Workshops() {
                 style={{
                     position: "relative",
                     cursor: "default !important",
-                    minHeight: "700px",
                     marginBottom: "3rem",
                     maxHeight: "100%"
                 }}
