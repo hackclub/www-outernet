@@ -8,7 +8,7 @@ export default function Travel() {
       <div className={styles.header}>
           <h1>
             Outernet is free and our gift to you; <br />
-            let's make sure you can make it out here.
+            let's make sure you can make it here.
           </h1>
       </div>
       <div className={styles.main}>
