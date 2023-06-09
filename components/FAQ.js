@@ -81,7 +81,7 @@ export default function FAQ() {
                 <p>
                   Sturdy shoes, casual clothes for four days, a rain jacket, a
                   hoodie, swimming wear, a towel, simple toiletries, a
-                  flashlight, a laptop plus it's charger, and an open mind.
+                  flashlight, a laptop plus its charger, and an open mind.
                 </p>
               </div>
               <div className={styles.qa}>
