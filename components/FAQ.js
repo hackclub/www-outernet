@@ -10,7 +10,6 @@ export default function FAQ() {
         </h1>
         <div className={styles.faq}>
           <div>
-            <Fade delay={200}>
               <div className={styles.qa}>
                 <h2>What is this?</h2>
                 <p>
@@ -20,8 +19,6 @@ export default function FAQ() {
                   supports a global community of 25k high school makers.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={400}>
               <div className={styles.qa}>
                 <h2>Who can attend?</h2>
                 <p>
@@ -29,8 +26,6 @@ export default function FAQ() {
                   seniors and middle schoolers are also welcome to join us.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={600}>
               <div className={styles.qa}>
                 <h2>How much does this event cost?</h2>
                 <p>
@@ -38,8 +33,6 @@ export default function FAQ() {
                   included. Travel stipends are also available.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={800}>
               <div className={styles.qa}>
                 <h2>I can't pay for travel...</h2>
                 <p>
@@ -49,8 +42,6 @@ export default function FAQ() {
                   flights. More details are available post-registration.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={1000}>
               <div className={styles.qa}>
                 <h2>What amenities will be available?</h2>
                 <p>
@@ -60,10 +51,8 @@ export default function FAQ() {
                   we'll make it work!).
                 </p>
               </div>
-            </Fade>
           </div>
           <div>
-            <Fade delay={1000}>
               <div className={styles.qa}>
                 <h2>Where is Outernet hosted?</h2>
                 <p>
@@ -79,8 +68,6 @@ export default function FAQ() {
                   .
                 </p>
               </div>
-            </Fade>
-            <Fade delay={1200}>
               <div className={styles.qa}>
                 <h2>What are the sleeping arrangements?</h2>
                 <p>
@@ -89,8 +76,6 @@ export default function FAQ() {
                   welcome to bring your own tent setup.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={1400}>
               <div className={styles.qa}>
                 <h2>What should I bring?</h2>
                 <p>
@@ -99,8 +84,6 @@ export default function FAQ() {
                   flashlight, a laptop plus it's charger, and an open mind.
                 </p>
               </div>
-            </Fade>
-            <Fade delay={1600}>
               <div className={styles.qa}>
                 <h2>My parents are worried!</h2>
                 <p>
@@ -118,8 +101,6 @@ export default function FAQ() {
                   .
                 </p>
               </div>
-            </Fade>
-            <Fade delay={1800}>
               <div className={styles.qa}>
                 <h2>What have you all done in years prior?</h2>
                 <p>
@@ -135,7 +116,6 @@ export default function FAQ() {
                   .
                 </p>
               </div>
-            </Fade>
           </div>
         </div>
       </section>

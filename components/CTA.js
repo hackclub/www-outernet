@@ -15,15 +15,12 @@ export default function CTA() {
     <section className={styles.wrapper} ref={containerRef}>
       <div>
         <h1 style={{marginBlockEnd: '0.3em'}}>
-          <Fade>You make this summer epic...</Fade>
+          You make this summer epic...
         </h1>
-        <Fade delay={300}>
           <p style={{ marginBottom: 0 }}>
             No matter where our events take us, the key to the magic has always
             been you. <br /> Sign up below; let's make this the most meaningful weekend of the year.
           </p>
-        </Fade>
-        <Fade delay={500}>
           <div className={styles.forms}>
             <div>
               <p style={{marginBottom: '4px', fontWeight: 500}}>Name</p>
@@ -46,9 +43,7 @@ export default function CTA() {
               />
             </div>
           </div>
-        </Fade>
         <br />
-        <Fade delay={700}>
           <Button
             backgroundColor="var(--khaki)"
             textColor="var(--navy)"
@@ -61,7 +56,6 @@ export default function CTA() {
           >
             Register
           </Button>
-        </Fade>
       </div>
       <div>
         <img src="/cta-bg.svg" className={styles.border} />

@@ -143,7 +143,6 @@ export const YourAdventure = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Zoom>
         <h1>
           <span
             style={{
@@ -157,16 +156,12 @@ export const YourAdventure = () => {
           </span>{" "}
           decide your own adventure...
         </h1>
-      </Zoom>
-      <Fade delay={300}>
         <p>
           We’ll sleep in tents, code deep into the night, barbecue by the beach,
           toast marshmallows around a campfire — most importantly, however,
           you'll be given the time, space, and freedom to go on an adventure of
           your choosing.
         </p>
-      </Fade>
-      <Fade delay={500}>
         <div>
           <DragDropContext onDragEnd={reorderItems}>
             <div className={styles.timetable}>
@@ -340,7 +335,6 @@ export const YourAdventure = () => {
             </div>
           </DragDropContext>
         </div>
-      </Fade>
     </div>
   );
 };

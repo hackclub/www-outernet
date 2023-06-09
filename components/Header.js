@@ -56,26 +56,18 @@ export default function Header() {
         </div>
         <div className={styles.contentBg}></div>
         <div className={styles.content}>
-          <Fade>
+          
             <h2>Hack Club presents...</h2>
-          </Fade>
           <h1>
-            <Zoom cascade delay={300}>
               Outernet
-            </Zoom>
           </h1>
-          <Fade delay={500}>
             <p style={{ marginBottom: 0, marginBlockEnd: "0.4em" }}>
               A hacker oasis in nature for high school hackers
             </p>
-          </Fade>
-          <Fade delay={700}>
             <p style={{ marginBlockStart: "0em" }}>
               Northeast Kingdom, Vermont, USA &middot; 28th to 31st July, 2023
             </p>
-          </Fade>
           <br />
-          <Fade delay={900}>
             <Button
               backgroundColor="white"
               textColor="var(--orange)"
@@ -84,7 +76,6 @@ export default function Header() {
             >
               Join us
             </Button>
-          </Fade>
         </div>
         {/* <div>
                     <img src="/header-border.svg" className={styles.border} />

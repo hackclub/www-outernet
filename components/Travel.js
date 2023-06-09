@@ -6,15 +6,12 @@ export default function Travel() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <Fade>
           <h1>
             Outernet is free and our gift to you; <br />
             let's make sure you can make it out here.
           </h1>
-        </Fade>
       </div>
       <div className={styles.main}>
-        <Fade>
           <img src="https://lh3.googleusercontent.com/wTQaY8GnZQbkoSvsyDgb-GK27Pc4nIBnoGk2lJWMWdPQf1RPrCwX5L6GOwv5bC7SFMSsCkk4mnK2gNIW4tSpriMNUHDCnsdNjoBeVEqHXTWUiiEWfytP0Q=s1600" />
           <p>
             Outernet is taking place in Vermont's Northeast Kingdom (Cabot,
@@ -43,7 +40,6 @@ export default function Travel() {
             <a href="https://hack.af/outernet-travel-guide" target="_blank">travel guide</a>{" "}
             for additional guidance.
           </p>
-        </Fade>
       </div>
     </div>
   );
