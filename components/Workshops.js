@@ -104,7 +104,7 @@ export default function Workshops() {
     //         //       }
     //         // }),
     //     ]);
- 
+
     //     (function rerender() {
     //         // Rerender every box
     //         for (let box of boxes) box.render();
@@ -156,7 +156,13 @@ export default function Workshops() {
                         target="_blank">
                         github.com/hackclub/outernet.
                     </a>
+                    
                 </p>
+            </div>
+            <div style={{ position: "relative" }} id="ball-box">
+                <img src="/ball-lg.png" className="noSelect" style={{ width: "90%", position: "absolute", bottom: 0, left: 0 }} id="ball-lg" />
+                <img src="/ball-md.png" className="noSelect" style={{ width: "90%", position: "absolute", bottom: 0, left: 0 }} id="ball-md" />
+                <img src="/ball-sm.png" className="noSelect" style={{ width: "90%", position: "absolute", bottom: 0, left: 0 }} id="ball-sm" />
             </div>
             {/* <div
                 style={{

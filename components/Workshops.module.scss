@@ -1,7 +1,9 @@
 .wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 2rem 0 0 10vw;
     margin: auto;
+    position: relative;
 
     > div {
         flex-basis: 60%;

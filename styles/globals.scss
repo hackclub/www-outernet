@@ -200,3 +200,35 @@ h4 {
 a:-webkit-any-link {
     color: #338eda;
 }
+
+#ball-md, #ball-sm, #ball-lg, #ball-box {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#ball-lg, #ball-sm {
+  display: none !important;
+}
+
+@media screen and (max-width: 1500px) {
+  #ball-lg, #ball-sm {
+    display: none !important;
+  }
+
+  #ball-md {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #ball-lg, #ball-md {
+    display: none !important;
+  }
+
+  #ball-sm {
+    display: block !important;
+  }
+}
