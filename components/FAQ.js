@@ -105,13 +105,13 @@ export default function FAQ() {
                 <h2>What have you all done in years prior?</h2>
                 <p>
                   Glad you asked! We've ran overnight hackathons in{" "}
-                  <a href="https://youtu.be/PnK4gzO6S3Q" target="_blank">San Francisco</a> and
+                  <a href="https://youtu.be/PnK4gzO6S3Q" target="_blank">San Francisco</a> and {" "}
                   <a href="https://youtu.be/KLx4NZZPzMc" target="_blank">New Delhi</a>. 
                   Two years ago, we charted a train from
                   Vermont to Los Angles and ran the world's longest hackathon
                   over land. We're not kidding, check out the mini-documentary:{" "}
                   <a href="https://youtu.be/2BID8_pGuqA" target="_blank">
-                    youtu.be/2BID8_pGuqA
+                    The Hacker Zephyr
                   </a>
                   .
                 </p>
