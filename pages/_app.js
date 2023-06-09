@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
           name="Outernet ~ July 28th to 31st 2023 in Vermont" // site name
           title="Outernet ~ July 28th to 31st 2023 in Vermont" // page title
           description="This summer, join us in building a space where you can indulge in pure creativity. No preconceived notions. No expectations. Just a space for you to create whatever you want." // page description
-          image="https://cloud-axkzo2t3d-hack-club-bot.vercel.app/0outernet_meta__1_.png" // large summary card image URL
+          image="https://cloud-kvxkn7jz4-hack-club-bot.vercel.app/0outernet_meta__1_.png" // large summary card image URL
           color="#ec3750" // theme color
          />
         <Component {...pageProps} />
