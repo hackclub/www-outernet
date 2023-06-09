@@ -16,7 +16,7 @@ export default function FAQ() {
                 <p>
                   Outernet is four day hacker camp in Vermont for high schoolers
                   with workshops, mini-hackathons, CTFs, and similar technical
-                  events. It's organized by Hack Club, a 501(c)3 nonprofit that
+                  events. It's organized by Hack Club, a 501(c)(3) nonprofit that
                   supports a global community of 25k high school makers.
                 </p>
               </div>
