@@ -13,6 +13,11 @@ const nextConfig = {
         destination: 'https://airtable.com/shrKxW4Vga4uWFAL7',
         permanent: true,
       },
+      {
+        source: '/airlines',
+        destination: 'http://hack.af/outernet-airlines',
+        permanent: true,
+      }
     ];
   },
 };
