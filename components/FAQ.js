@@ -60,12 +60,7 @@ export default function FAQ() {
                   <a href="https://www.covenanthillsvt.org/who-we-are.html" target="_blank">
                     Covenant Hills Campground
                   </a>{" "}
-                  in the Northeast Kingdom region of Vermont, USA. The venue’s
-                  address is{" "}
-                  <a href="https://goo.gl/maps/zhMntt1f3KT6TZae9" target="_blank">
-                    246 Covenant Hills Rd, Cabot, VT 05647
-                  </a>
-                  .
+                  in the Northeast Kingdom region of Vermont, USA.
                 </p>
               </div>
               <div className={styles.qa}>
