@@ -17,6 +17,11 @@ const nextConfig = {
         source: '/airlines',
         destination: 'http://hack.af/outernet-airlines',
         permanent: true,
+      },
+      {
+        source: '/floods',
+        destination: 'https://gist.github.com/sampoder/d10e73cab74ca661eaaa9379407dff45',
+        permanent: true,
       }
     ];
   },
