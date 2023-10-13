@@ -8,8 +8,8 @@ export default function App({ Component, pageProps }) {
         <Meta
           name="Outernet ~ July 28th to 31st 2023 in Vermont" // site name
           title="Outernet ~ July 28th to 31st 2023 in Vermont" // page title
-          description="This summer, join us in building a space where you can indulge in pure creativity. No preconceived notions. No expectations. Just a space for you to create whatever you want." // page description
-          image="https://cloud-kvxkn7jz4-hack-club-bot.vercel.app/0outernet_meta__1_.png" // large summary card image URL
+          description="In 2023 we ventured out to the Northeast Kingdom of Vermont for Outernet — a four-day experimental coding/camping trip. Together, we turned a semi-abandoned campsite into a bustling hacker oasis." // page description
+          image="https://cloud-b4jjtkwg1-hack-club-bot.vercel.app/0github_screenshot__1_..png" // large summary card image URL
           color="#ec3750" // theme color
          />
         <Component {...pageProps} />
