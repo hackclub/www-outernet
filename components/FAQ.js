@@ -29,7 +29,7 @@ export default function FAQ() {
               <div className={styles.qa}>
                 <h2>How much does this event cost?</h2>
                 <p>
-                  Outernet is completely free, food and accomodation are
+                  Outernet is completely free, food and accomodations are
                   included. Travel stipends are also available.
                 </p>
               </div>
